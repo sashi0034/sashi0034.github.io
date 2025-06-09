@@ -1,5 +1,6 @@
 import { ArrowDownIcon } from '@heroicons/react/24/outline'
 import { AnimatedSection } from './components/AnimatedSection'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -49,7 +50,17 @@ export default function Home() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
             >
-              <h3 className="heading-3 mb-4">プロフィール</h3>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="/images/avatar/@sashi2024_335x335.png"
+                  alt="sashi2024のアイコン"
+                  width={64}
+                  height={64}
+                  className="rounded-full border border-gray-200"
+                  priority
+                />
+                <h3 className="heading-3 ml-4">プロフィール</h3>
+              </div>
               <p className="text-gray-600 mb-6">
                 ここにあなたの自己紹介文を入れてください。
                 あなたの経歴、スキル、興味のある分野などを
