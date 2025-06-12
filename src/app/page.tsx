@@ -15,6 +15,7 @@ import {
   FaSteam,
   FaTrophy,
 } from "react-icons/fa";
+import { CollapsibleSection } from "./components/CollapsibleSection";
 
 // 画像のベースパスを設定
 const isProd = process.env.NODE_ENV === "production";
@@ -544,6 +545,64 @@ export default function Home() {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Sub Projects Section */}
+      <div className="mt-16">
+        <h2 className="heading-2 text-center mb-6">Sub Projects</h2>
+        <p className="text-center text-gray-500 text-sm mb-6">
+          クリックすると展開されます
+        </p>
+        <div className="space-y-6">
+          {/* F0V2 Game Engine */}
+          <CollapsibleSection
+            title={
+              <div>
+                <div className="text-2xl font-bold text-primary-800">F0V2</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  DirectX 12 ゲームエンジンとそれで作るゲーム
+                </div>
+              </div>
+            }
+          >
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="md:w-1/2">
+                <p className="text-gray-600 mb-4">
+                  ゲームエンジン開発とともに、物理ベースの3Dレンダリングを実装してオープンワールド風のフライトシューティングかレースゲームを作っています。
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <a
+                    href="https://github.com/sashi0034/F0V2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    <span>GitHub</span>
+                  </a>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    C++
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    DirectX 12
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    HLSL
+                  </span>
+                </div>
+              </div>
+              <div className="md:w-1/2 flex items-center justify-center">
+                <div className="aspect-video w-full bg-gray-100 rounded-lg flex items-center justify-center">
+                  <p className="text-gray-500">
+                    開発中のスクリーンショットは準備中です
+                  </p>
+                </div>
+              </div>
+            </div>
+          </CollapsibleSection>
+        </div>
+      </div>
 
       {/* Footer Section */}
       <footer className="bg-gray-50 py-8 border-t border-gray-200">
