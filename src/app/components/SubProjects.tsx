@@ -233,7 +233,7 @@ export const SubProjects = () => {
             </div>
             <div className="md:w-1/2 flex items-center justify-center">
               <img
-                src="https://private-user-images.githubusercontent.com/82739042/258631359-181d9a71-6b28-400a-9f02-283e020120c3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk3MTY4NzcsIm5iZiI6MTc0OTcxNjU3NywicGF0aCI6Ii84MjczOTA0Mi8yNTg2MzEzNTktMTgxZDlhNzEtNmIyOC00MDBhLTlmMDItMjgzZTAyMDEyMGMzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjEyVDA4MjI1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTViMDRlODg5MTc0N2FjNTlmYTA4YTBkYmNiMTBkM2I0YmYxNjQwZDMyYmFmZmQxZjA1N2ZjZGVhZTI0NWM3NGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.e9m5L9eSkDgsB3qgYILRlwARnZH8FWO6fkSEEn1i2-A"
+                src="/images/screenshot/gbemu.png"
                 alt="GBEmu screenshot"
                 className="rounded-lg shadow-lg max-h-64 mb-2"
               />
@@ -282,7 +282,7 @@ export const SubProjects = () => {
             </div>
             <div className="md:w-1/2 flex items-center justify-center">
               <img
-                src="https://private-user-images.githubusercontent.com/82739042/321157143-69e690f9-4f92-4829-9e5b-b35c36b16f22.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk3MTc1NTIsIm5iZiI6MTc0OTcxNzI1MiwicGF0aCI6Ii84MjczOTA0Mi8zMjExNTcxNDMtNjllNjkwZjktNGY5Mi00ODI5LTllNWItYjM1YzM2YjE2ZjIyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjEyVDA4MzQxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI4MDJiNWNmZTE3ZGZjOTBiZmI5ZjE1YTUxYmNlZDEyNTU5ZjE3MTJlNDk2MTFiYjIzODRkY2I4YTZhMGY5ZjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dostdbWVLtAkjhIUNUCYLUNIVYTkYutEBEVGgFem1l8"
+                src="/images/screenshot/fumichou.png"
                 alt="Fumichou screenshot"
                 className="rounded-lg shadow-lg max-h-64 mb-2"
               />
