@@ -13,6 +13,18 @@ const nextConfig = {
     path: `${basePath}/_next/image`,
   },
   trailingSlash: true,
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+      }
+    }
+    return config
+  },
+  experimental: {
+    optimizeCss: true,
+  },
 }
 
 module.exports = nextConfig 
