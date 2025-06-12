@@ -95,15 +95,22 @@ export const SubProjects = () => {
                 タスク常駐アプリであり、使い勝手のよいアプリケーションです。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <a
-                  href="https://github.com/sashi0034/EmojiInput"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
-                >
-                  <FaGithub className="w-5 h-5" />
-                  <span>GitHub</span>
-                </a>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/sashi0034/EmojiInput-lsp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    <span>GitHub</span>
+                  </a>
+                  <img
+                    src="https://img.shields.io/github/stars/sashi0034/EmojiInput?style=flat-square&label=stars"
+                    alt="GitHub stars"
+                    className="h-6"
+                  />
+                </div>
               </div>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
@@ -125,6 +132,56 @@ export const SubProjects = () => {
                   className="rounded-lg shadow-lg max-h-64 mb-2"
                 />
               </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        {/* GBEmu */}
+        <CollapsibleSection
+          title={
+            <div>
+              <div className="text-2xl font-bold text-primary-800">GBEmu</div>
+              <div className="text-sm text-gray-600 mt-1">
+                Game Boy エミュレータ
+              </div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                C++ で実装した Game Boy エミュレータです。 PPU (グラフィック) は
+                GPU
+                を使用するように実装しており、パフォーマンスはかなり良好です。
+                APU (サウンド) の実装も行いました。 カートリッジの対応は MBC1
+                のみしています。
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <a
+                  href="https://github.com/sashi0034/GBEmu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                >
+                  <FaGithub className="w-5 h-5" />
+                  <span>GitHub</span>
+                </a>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C++
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Assembly
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <img
+                src="https://private-user-images.githubusercontent.com/82739042/258631359-181d9a71-6b28-400a-9f02-283e020120c3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk3MTY4NzcsIm5iZiI6MTc0OTcxNjU3NywicGF0aCI6Ii84MjczOTA0Mi8yNTg2MzEzNTktMTgxZDlhNzEtNmIyOC00MDBhLTlmMDItMjgzZTAyMDEyMGMzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjEyVDA4MjI1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTViMDRlODg5MTc0N2FjNTlmYTA4YTBkYmNiMTBkM2I0YmYxNjQwZDMyYmFmZmQxZjA1N2ZjZGVhZTI0NWM3NGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.e9m5L9eSkDgsB3qgYILRlwARnZH8FWO6fkSEEn1i2-A"
+                alt="GBEmu screenshot"
+                className="rounded-lg shadow-lg max-h-64 mb-2"
+              />
             </div>
           </div>
         </CollapsibleSection>
