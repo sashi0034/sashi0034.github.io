@@ -1,26 +1,12 @@
 'use client'
 
-import { motion, TargetAndTransition, VariantLabels } from 'framer-motion'
+import { motion, HTMLMotionProps } from 'framer-motion'
 import { ReactNode } from 'react'
 
-interface AnimatedSectionProps {
+type AnimatedSectionProps = {
   children: ReactNode
   className?: string
-  initial?: TargetAndTransition | VariantLabels | boolean
-  animate?: TargetAndTransition | VariantLabels | boolean
-  transition?: {
-    duration?: number
-    delay?: number
-    repeat?: number
-    repeatType?: 'loop' | 'reverse' | 'mirror'
-  }
-  viewport?: {
-    once?: boolean
-    amount?: number
-    margin?: string
-  }
-  onClick?: () => void
-}
+} & Pick<HTMLMotionProps<'div'>, 'initial' | 'animate' | 'transition' | 'viewport' | 'onClick'>
 
 export function AnimatedSection({
   children,
