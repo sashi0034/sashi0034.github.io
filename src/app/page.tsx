@@ -146,6 +146,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
+
               <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
                 <FaGamepad className="w-4 h-4 text-primary-600" />
                 <span>DirectX 12</span>
@@ -167,7 +168,7 @@ export default function Home() {
                 <FaGamepad className="w-4 h-4 text-primary-600" />
                 <span>Unity</span>
                 <span className="text-xs text-gray-600 mt-1">
-                  アルバイトで四年以上開発
+                  アルバイトで四年以上チーム開発
                 </span>
               </div>
               <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
@@ -202,6 +203,15 @@ export default function Home() {
                   GPGPU (研究分野)
                 </span>
               </div>
+              <div className="flex flex-col items-center">
+                <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                  <FaServer className="w-4 h-4 text-primary-600" />
+                  <span>C言語, Fortran</span>
+                  <span className="text-xs text-gray-600 mt-1">
+                    スパコンの数値計算
+                  </span>
+                </div>
+              </div>
               <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
                 <FaTools className="w-4 h-4 text-primary-600" />
                 <span>Git</span>
@@ -224,15 +234,15 @@ export default function Home() {
                   Language Server Protocol
                 </span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full text-primary-800 hover:bg-primary-200 transition-colors group relative">
-                <FaMicrosoft className="w-5 h-5" />
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaMicrosoft className="w-5 h-5 text-primary-600" />
                 <span>C#</span>
                 <span className="text-xs text-gray-600 mt-1">
                   Unity 外の .NET も
                 </span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full text-primary-800 hover:bg-primary-200 transition-colors group relative">
-                <FaWindows className="w-5 h-5" />
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaWindows className="w-5 h-5 text-primary-600" />
                 <span>WPF</span>
                 <span className="text-xs text-gray-600 mt-1">
                   アルバイトで開発
@@ -475,6 +485,59 @@ export default function Home() {
                       allowFullScreen
                     ></iframe>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <div className="flex flex-col md:flex-row gap-6">
+                <div className="md:w-1/2">
+                  <h3 className="text-2xl font-bold text-primary-800 mb-2">
+                    研究内容: 高性能BEM数値解析フレームワーク
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    大学院では、境界要素法 (BEM)
+                    による大規模数値解析プログラムの高性能化を研究しています。
+                    BEMは解析領域の境界のみを離散化することで高精度な解を効率的に得られる手法ですが、密行列計算の計算量・メモリ量が課題です。
+                    本研究では、
+                    <span className="font-bold">
+                      GPU (CUDA) による高速な反復解法 (BiCGStab 法)
+                    </span>
+                    と、CPU 側の前処理の OpenMP 並列化を組み合わせ、
+                    スパコン上で効率的に動作する解析フレームワークを開発します。
+                    ユーザーは物理モデルに応じた境界積分関数を記述するだけで、汎用的かつ高性能な
+                    BEM 解析が可能です。
+                    <span className="font-bold">
+                      また、この研究で用いる可視化ツールに DirectX 12
+                      で開発している独自ゲームエンジンを使用しています。
+                    </span>
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {/* 必要に応じてリンクを追加 */}
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      CUDA
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      OpenMP
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      C++
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      HPC
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      DirectX 12
+                    </span>
+                  </div>
+                </div>
+                <div className="md:w-1/2 flex items-center justify-center">
+                  <img
+                    src="/images/screenshot/bb-bem.png"
+                    alt="BEM可視化サンプル"
+                    className="rounded-lg shadow-lg w-full max-w-xs"
+                  />
                 </div>
               </div>
             </div>
