@@ -210,6 +210,20 @@ export default function Home() {
                 <FaTools className="w-4 h-4 text-primary-600" />
                 <span>GitHub Actions</span>
               </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaCode className="w-4 h-4 text-primary-600" />
+                <span>コンパイラ開発</span>
+                <span className="text-xs text-gray-600 mt-1">
+                  C Compiler for x86_64
+                </span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaCode className="w-4 h-4 text-primary-600" />
+                <span>LSP</span>
+                <span className="text-xs text-gray-600 mt-1">
+                  Language Server Protocol
+                </span>
+              </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full text-primary-800 hover:bg-primary-200 transition-colors group relative">
                 <FaMicrosoft className="w-5 h-5" />
                 <span>C#</span>
@@ -242,10 +256,13 @@ export default function Home() {
                       Mutable 50
                     </h3>
                     <p className="text-gray-600 mb-4">
-                      C++ / Siv3Dで開発したアクションゲーム。Siv3D
-                      バンダイナムコスタジオ杯 2023 で
-                      <span className="font-bold">最優秀賞</span>を受賞し、
-                      Steamでリリースしました。
+                      C++ / Siv3Dで開発した 2D アクションゲームです。
+                      <span className="font-bold">
+                        Siv3D バンダイナムコスタジオ杯 2023 で最優秀賞
+                      </span>
+                      を受賞しました。 その後、個人で Steam
+                      でリリースして販売しています。 独自 HLSL
+                      シェーダーによる斬新なグラフィック、躍動的なアニメーション表現などを取り入れることで野心的なゲームに仕上げました。
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <a
@@ -301,6 +318,114 @@ export default function Home() {
                         allowFullScreen
                       ></iframe>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-6">
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/2">
+                    <h3 className="text-2xl font-bold text-primary-800 mb-2">
+                      angel-lsp
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      AngelScript は Lua
+                      のようにゲーム開発の現場で用いられる静的スクリプト言語です。
+                      この OSS プロジェクトは唯一無二の AngelScript 汎用 LSP
+                      クライエントであり、多くのゲーム開発者に使用されています。
+                      高性能な解析を行うために、コンパイラのフロントエンド部分を
+                      TypeScript で一から実装しました。VSCode
+                      などのクライアントで動作し、開発に必要な主要な機能が利用できます。
+                      このソフトウェアは、実際のゲーム会社でも使用されている他、
+                      OSS で開発されている人気ゲームエンジン
+                      <b>
+                        <a
+                          href="https://ezengine.net/pages/docs/custom-code/angelscript/as-components.html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          ezEngine で公式サポートされている
+                        </a>
+                      </b>
+                      といった実績があります。
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <a
+                        href="https://github.com/sashi0034/angel-lsp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                      >
+                        <FaGithub className="w-5 h-5" />
+                        <span>GitHub</span>
+                      </a>
+                      <a
+                        href="https://zenn.dev/sashi0034/articles/fc929f7d644387"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-800 hover:bg-blue-200 transition-colors"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="w-5 h-5"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M12 6v6l4 2m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        <span>開発記事</span>
+                      </a>
+                      <a
+                        href="https://ezengine.net/pages/docs/custom-code/angelscript/as-components.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full text-green-800 hover:bg-green-200 transition-colors"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          className="w-5 h-5"
+                        >
+                          <path d="M11.3 1.046a1.75 1.75 0 00-2.6 0l-.5.558a1.75 1.75 0 01-2.1.44l-.66-.33a1.75 1.75 0 00-2.3.78l-.33.66a1.75 1.75 0 01-.44 2.1l-.558.5a1.75 1.75 0 000 2.6l.558.5a1.75 1.75 0 01.44 2.1l-.33.66a1.75 1.75 0 00.78 2.3l.66.33a1.75 1.75 0 012.1.44l.5.558a1.75 1.75 0 002.6 0l.5-.558a1.75 1.75 0 012.1-.44l.66.33a1.75 1.75 0 002.3-.78l.33-.66a1.75 1.75 0 01.44-2.1l.558-.5a1.75 1.75 0 000-2.6l-.558-.5a1.75 1.75 0 01-.44-2.1l.33-.66a1.75 1.75 0 00-.78-2.3l-.66-.33a1.75 1.75 0 00-2.1.44l-.5.558zm-1.3 5.204a3.25 3.25 0 11-6.5 0 3.25 3.25 0 016.5 0z" />
+                        </svg>
+                        <span>ezEngine document</span>
+                      </a>
+                      <span className="inline-flex items-center gap-1 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          className="w-4 h-4"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z" />
+                        </svg>
+                        60
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                        TypeScript
+                      </span>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                        AngelScript
+                      </span>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                        LSP
+                      </span>
+                    </div>
+                  </div>
+                  <div className="md:w-1/2 flex items-center justify-center">
+                    <img
+                      src="https://raw.githubusercontent.com/sashi0034/angel-lsp/main/sample.png"
+                      alt="angel-lsp project image"
+                      className="rounded-lg shadow-lg w-full max-w-xs"
+                    />
                   </div>
                 </div>
               </div>
