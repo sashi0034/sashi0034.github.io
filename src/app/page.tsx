@@ -14,6 +14,8 @@ import {
   FaTools,
   FaMicrosoft,
   FaWindows,
+  FaSteam,
+  FaTrophy,
 } from "react-icons/fa";
 
 // 画像のベースパスを設定
@@ -213,8 +215,8 @@ export default function Home() {
               <div className="flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full text-primary-800 hover:bg-primary-200 transition-colors group relative">
                 <FaMicrosoft className="w-5 h-5" />
                 <span>C#</span>
-                <span className="text-sm text-primary-600 opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                  .NET開発
+                <span className="text-xs text-gray-600 mt-1">
+                  Unity 外の .NET も
                 </span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full text-primary-800 hover:bg-primary-200 transition-colors group relative">
@@ -238,6 +240,86 @@ export default function Home() {
               <ProjectTree key={project.id} project={project} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Project Section */}
+      <section id="new-project" className="section bg-gray-50">
+        <div className="container">
+          <AnimatedSection>
+            <h2 className="heading-2 mb-6">Projects</h2>
+            <div className="space-y-12">
+              <div className="bg-white rounded-lg shadow-lg p-6">
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/2">
+                    <h3 className="text-2xl font-bold text-primary-800 mb-2">
+                      Mutable 50
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      C++ / Siv3Dで開発したアクションゲーム。Siv3D
+                      バンダイナムコスタジオ杯 2023 で
+                      <span className="font-bold">最優秀賞</span>を受賞し、
+                      Steamでリリースしました。
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <a
+                        href="https://github.com/sashi0034/Sukuu"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                      >
+                        <FaGithub className="w-5 h-5" />
+                        <span>GitHub</span>
+                      </a>
+                      <a
+                        href="https://store.steampowered.com/app/3147480/Mutable_50/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                      >
+                        <FaSteam className="w-5 h-5" />
+                        <span>Steam</span>
+                      </a>
+                      <a
+                        href="https://siv3d.github.io/ja-jp/event/gamejam2023/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#171a21] rounded-full text-white hover:bg-[#2a3f5f] transition-colors"
+                      >
+                        <FaTrophy className="w-5 h-5" />
+                        <span>ゲームジャム</span>
+                      </a>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                        C++
+                      </span>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                        Siv3D
+                      </span>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                        HLSL
+                      </span>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                        Pixelart
+                      </span>
+                    </div>
+                  </div>
+                  <div className="md:w-1/2">
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/UAZB_YyMgmQ"
+                        title="Mutable 50 - Gameplay Trailer"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
