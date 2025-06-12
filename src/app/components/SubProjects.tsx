@@ -295,7 +295,7 @@ export const SubProjects = () => {
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
-                Unity で作ったゲーム
+                Unity で開発したゲーム
               </div>
               <div className="text-sm text-gray-600 mt-1">
                 Photon Fusion によるオンライン対戦
@@ -321,7 +321,7 @@ export const SubProjects = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
                   >
-                    <span>Unity Room</span>
+                    <span>unityroom</span>
                   </a>
                 </div>
               </div>
@@ -351,7 +351,7 @@ export const SubProjects = () => {
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
-                hello-seed
+                関数型プログラミング言語で開発したゲーム
               </div>
               <div className="text-sm text-gray-600 mt-1">
                 関数型プログラミング言語 Haskell と SDL2 で作ったミニゲーム
