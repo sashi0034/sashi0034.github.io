@@ -19,7 +19,7 @@ export default function Home() {
           <AnimatedSection>
             <h1 className="heading-1 mb-6">
               <span className="block text-primary-600">sashi</span>
-              <span className="block">Portfolio</span>
+              <span className="block">portfolio</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               クリエイティブなソリューションを提供する
