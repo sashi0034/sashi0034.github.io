@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   title: 'sashi portfolio',
   description: 'Welcome to my portfolio website',
   metadataBase: new URL(isProd ? 'https://sashi0034.github.io' : 'http://localhost:3000'),
+  manifest: `${basePath}/manifest.json`,
+  icons: {
+    icon: `${basePath}/favicon.ico`,
+  },
 }
 
 export default function RootLayout({
@@ -38,6 +42,11 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href={`${basePath}/globals.css`}
+        />
+        <link
+          rel="icon"
+          href={`${basePath}/favicon.ico`}
+          type="image/x-icon"
         />
       </head>
       <body className={`${inter.variable} font-sans bg-white text-gray-900`}>

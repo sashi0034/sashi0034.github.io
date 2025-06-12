@@ -7,10 +7,8 @@ const nextConfig = {
   swcMinify: true,
   output: 'export',
   basePath,
-  assetPrefix: basePath,
   images: {
     unoptimized: true,
-    path: `${basePath}/_next/image`,
   },
   trailingSlash: true,
   webpack: (config, { isServer }) => {
