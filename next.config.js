@@ -1,16 +1,18 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+const basePath = isProd ? '/sashi0034.github.io' : ''
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: 'export',
+  basePath,
+  assetPrefix: basePath,
   images: {
     unoptimized: true,
+    path: `${basePath}/_next/image`,
   },
-  // GitHub Pages用の設定は本番環境でのみ適用
-  ...(process.env.NODE_ENV === 'production' && {
-    basePath: '/sashi0034.github.io',
-    trailingSlash: true,
-  }),
+  trailingSlash: true,
 }
 
 module.exports = nextConfig 

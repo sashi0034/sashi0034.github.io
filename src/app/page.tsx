@@ -6,6 +6,10 @@ import { ProjectTree } from './components/ProjectTree'
 import { projects } from './types/project'
 import Image from 'next/image'
 
+// 画像のベースパスを設定
+const isProd = process.env.NODE_ENV === 'production'
+const basePath = isProd ? '/sashi0034.github.io' : ''
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -56,7 +60,7 @@ export default function Home() {
             >
               <div className="flex items-center mb-4">
                 <Image
-                  src="/images/avatar/@sashi2024_335x335.png"
+                  src={`${basePath}/images/avatar/@sashi2024_335x335.png`}
                   alt="sashi2024のアイコン"
                   width={64}
                   height={64}
