@@ -5,7 +5,16 @@ import { AnimatedSection } from "./components/AnimatedSection";
 import { ProjectTree } from "./components/ProjectTree";
 import { projects } from "./types/project";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
+import {
+  FaGithub,
+  FaGamepad,
+  FaCode,
+  FaServer,
+  FaDatabase,
+  FaTools,
+  FaMicrosoft,
+  FaWindows,
+} from "react-icons/fa";
 
 // 画像のベースパスを設定
 const isProd = process.env.NODE_ENV === "production";
@@ -21,6 +30,9 @@ export default function Home() {
             <h1 className="heading-1 mb-6">
               <span className="block text-primary-600">sashi</span>
               <span className="block">portfolio</span>
+              <div className="flex justify-center mt-4">
+                <FaGamepad className="w-12 h-12 text-primary-600" />
+              </div>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               ゲーム開発をしています
@@ -54,7 +66,7 @@ export default function Home() {
       <section id="about" className="section bg-white">
         <div className="container">
           <h2 className="heading-2 text-center mb-12">About Me</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <AnimatedSection
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -87,8 +99,8 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex items-center">
-                  <span className="w-24 font-medium">スキル</span>
-                  <span className="text-gray-600">ここにスキルを記載</span>
+                  <span className="w-24 font-medium">研究分野</span>
+                  <span className="text-gray-600">HPC</span>
                 </div>
                 <div>
                   <span className="w-24 font-medium block mb-2">経歴</span>
@@ -116,6 +128,104 @@ export default function Home() {
               />
             </AnimatedSection>
           </div>
+
+          {/* Skills Section - Full Width */}
+          <AnimatedSection
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-12"
+          >
+            <h3 className="heading-3 text-center mb-8">習得済み</h3>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <div className="flex flex-col items-center">
+                <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                  <FaGamepad className="w-4 h-4 text-primary-600" />
+                  <span>C++</span>
+                  <span className="text-xs text-gray-600 mt-1">
+                    最も使用した言語 (C++20)
+                  </span>
+                </div>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaGamepad className="w-4 h-4 text-primary-600" />
+                <span>DirectX 12</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                  <FaGamepad className="w-4 h-4 text-primary-600" />
+                  <span>HLSL</span>
+                </div>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaGamepad className="w-4 h-4 text-primary-600" />
+                <span>Siv3D</span>
+                <span className="text-xs text-gray-600 mt-1">
+                  コミット実績あり
+                </span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaGamepad className="w-4 h-4 text-primary-600" />
+                <span>Unity</span>
+                <span className="text-xs text-gray-600 mt-1">
+                  アルバイトで四年以上開発
+                </span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaCode className="w-4 h-4 text-primary-600" />
+                <span>TypeScript</span>
+                <span className="text-xs text-gray-600 mt-1">angel-lsp</span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaGamepad className="w-4 h-4 text-primary-600" />
+                <span>Pixelart</span>
+                <span className="text-xs text-gray-600 mt-1">
+                  SHIBUYA PIXEL ART 2024 受賞
+                </span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaGamepad className="w-4 h-4 text-primary-600" />
+                <span>Blender</span>
+                <span className="text-xs text-gray-600 mt-1">アセット作成</span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaServer className="w-4 h-4 text-primary-600" />
+                <span>Python</span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaServer className="w-4 h-4 text-primary-600" />
+                <span>OpenMP</span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaServer className="w-4 h-4 text-primary-600" />
+                <span>CUDA</span>
+                <span className="text-xs text-gray-600 mt-1">
+                  GPGPU (研究分野)
+                </span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaTools className="w-4 h-4 text-primary-600" />
+                <span>Git</span>
+              </div>
+              <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                <FaTools className="w-4 h-4 text-primary-600" />
+                <span>GitHub Actions</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full text-primary-800 hover:bg-primary-200 transition-colors group relative">
+                <FaMicrosoft className="w-5 h-5" />
+                <span>C#</span>
+                <span className="text-sm text-primary-600 opacity-0 group-hover:opacity-100 transition-opacity absolute -bottom-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                  .NET開発
+                </span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full text-primary-800 hover:bg-primary-200 transition-colors group relative">
+                <FaWindows className="w-5 h-5" />
+                <span>WPF</span>
+                <span className="text-xs text-gray-600 mt-1">
+                  アルバイトで開発
+                </span>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
