@@ -7,7 +7,9 @@ export const SubProjects = () => {
       <h2 className="heading-2 text-center mb-6">Sub Projects</h2>
       <p className="text-center text-sm mb-6">
         その他のプロジェクトです
-        <p className="text-gray-500 ">クリックすると展開されます</p>
+        <br />
+        クリックすると展開されます
+        {/* <p className="text-gray-500 ">クリックすると展開されます</p> */}
       </p>
       <div className="space-y-6">
         {/* F0V2 Game Engine */}
@@ -154,7 +156,8 @@ export const SubProjects = () => {
                 GPU
                 を使用するように実装しており、パフォーマンスはかなり良好です。
                 APU (サウンド) の実装も行いました。 カートリッジの対応は MBC1
-                のみしています。
+                のみしています。 あまり C++
+                に慣れていないときに書いたコードなので、実装に荒い部分が少々あります。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <a
@@ -180,6 +183,55 @@ export const SubProjects = () => {
               <img
                 src="https://private-user-images.githubusercontent.com/82739042/258631359-181d9a71-6b28-400a-9f02-283e020120c3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk3MTY4NzcsIm5iZiI6MTc0OTcxNjU3NywicGF0aCI6Ii84MjczOTA0Mi8yNTg2MzEzNTktMTgxZDlhNzEtNmIyOC00MDBhLTlmMDItMjgzZTAyMDEyMGMzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjEyVDA4MjI1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTViMDRlODg5MTc0N2FjNTlmYTA4YTBkYmNiMTBkM2I0YmYxNjQwZDMyYmFmZmQxZjA1N2ZjZGVhZTI0NWM3NGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.e9m5L9eSkDgsB3qgYILRlwARnZH8FWO6fkSEEn1i2-A"
                 alt="GBEmu screenshot"
+                className="rounded-lg shadow-lg max-h-64 mb-2"
+              />
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        {/* Fumichou */}
+        <CollapsibleSection
+          title={
+            <div>
+              <div className="text-2xl font-bold text-primary-800">
+                Fumichou
+              </div>
+              <div className="text-sm text-gray-600 mt-1">NES エミュレータ</div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                GBEmu と同様に C++ で実装したファミコンのエミュレータです。
+                こちらも描画のパフォーマンスは良好ですが、メモリユニットの実装を最適化出来たと思います。
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/sashi0034/Fumichou"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C++
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Assembly
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <img
+                src="https://private-user-images.githubusercontent.com/82739042/321157143-69e690f9-4f92-4829-9e5b-b35c36b16f22.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk3MTc1NTIsIm5iZiI6MTc0OTcxNzI1MiwicGF0aCI6Ii84MjczOTA0Mi8zMjExNTcxNDMtNjllNjkwZjktNGY5Mi00ODI5LTllNWItYjM1YzM2YjE2ZjIyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjEyVDA4MzQxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI4MDJiNWNmZTE3ZGZjOTBiZmI5ZjE1YTUxYmNlZDEyNTU5ZjE3MTJlNDk2MTFiYjIzODRkY2I4YTZhMGY5ZjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dostdbWVLtAkjhIUNUCYLUNIVYTkYutEBEVGgFem1l8"
+                alt="Fumichou screenshot"
                 className="rounded-lg shadow-lg max-h-64 mb-2"
               />
             </div>
