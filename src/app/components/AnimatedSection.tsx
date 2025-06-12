@@ -19,6 +19,7 @@ interface AnimatedSectionProps {
     amount?: number
     margin?: string
   }
+  onClick?: () => void
 }
 
 export function AnimatedSection({
@@ -27,7 +28,8 @@ export function AnimatedSection({
   initial = { opacity: 0, y: 20 },
   animate = { opacity: 1, y: 0 },
   transition = { duration: 0.8 },
-  viewport = { once: true }
+  viewport = { once: true },
+  onClick
 }: AnimatedSectionProps) {
   return (
     <motion.div
@@ -36,6 +38,7 @@ export function AnimatedSection({
       animate={animate}
       transition={transition}
       viewport={viewport}
+      onClick={onClick}
     >
       {children}
     </motion.div>

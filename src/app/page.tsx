@@ -1,5 +1,9 @@
+'use client'
+
 import { ArrowDownIcon } from '@heroicons/react/24/outline'
 import { AnimatedSection } from './components/AnimatedSection'
+import { ProjectTree } from './components/ProjectTree'
+import { projects } from './types/project'
 import Image from 'next/image'
 
 export default function Home() {
@@ -100,35 +104,22 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="section bg-primary-50">
+      <section id="projects" className="section bg-gray-50">
         <div className="container">
           <h2 className="heading-2 text-center mb-12">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <AnimatedSection
-              className="bg-white rounded-lg shadow-lg overflow-hidden"
-            >
-              <div className="p-6">
-                <h3 className="heading-3 mb-2">プロジェクト名</h3>
-                <p className="text-gray-600 mb-4">
-                  プロジェクトの説明文をここに記載します。
-                  使用した技術や成果などを簡潔に説明しましょう。
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">
-                    技術1
-                  </span>
-                  <span className="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">
-                    技術2
-                  </span>
-                </div>
-              </div>
-            </AnimatedSection>
+          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            {projects.map((project) => (
+              <ProjectTree
+                key={project.id}
+                project={project}
+              />
+            ))}
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="section bg-white">
+      <section id="contact" className="section bg-white">
         <div className="container">
           <h2 className="heading-2 text-center mb-12">Contact</h2>
           <div className="max-w-2xl mx-auto">
