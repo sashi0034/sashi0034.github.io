@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 // 画像のベースパスを設定
 const isProd = process.env.NODE_ENV === 'production'
-const basePath = isProd ? '/sashi0034.github.io' : ''
+const basePath = ''
 
 export default function Home() {
   return (

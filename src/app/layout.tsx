@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 
 const isProd = process.env.NODE_ENV === 'production'
-const basePath = isProd ? '/sashi0034.github.io' : ''
+const basePath = ''
 
 const inter = Inter({
   subsets: ['latin'],
@@ -45,10 +45,6 @@ export default function RootLayout({
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
-        />
-        <link
-          rel="stylesheet"
-          href={`${basePath}/globals.css`}
         />
         {/* 本番環境の場合のみファビコンを追加 */}
         {isProd && (
