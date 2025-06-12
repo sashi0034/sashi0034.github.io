@@ -349,15 +349,22 @@ export default function Home() {
                       といった実績があります。
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <a
-                        href="https://github.com/sashi0034/angel-lsp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
-                      >
-                        <FaGithub className="w-5 h-5" />
-                        <span>GitHub</span>
-                      </a>
+                      <div className="flex items-center gap-2">
+                        <a
+                          href="https://github.com/sashi0034/angel-lsp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                        >
+                          <FaGithub className="w-5 h-5" />
+                          <span>GitHub</span>
+                        </a>
+                        <img
+                          src="https://img.shields.io/github/stars/sashi0034/angel-lsp?style=flat-square&label=stars"
+                          alt="GitHub stars"
+                          className="h-6"
+                        />
+                      </div>
                       <a
                         href="https://zenn.dev/sashi0034/articles/fc929f7d644387"
                         target="_blank"
@@ -396,17 +403,6 @@ export default function Home() {
                         </svg>
                         <span>ezEngine document</span>
                       </a>
-                      <span className="inline-flex items-center gap-1 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          className="w-4 h-4"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.178c.969 0 1.371 1.24.588 1.81l-3.385 2.46a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.385-2.46a1 1 0 00-1.175 0l-3.385 2.46c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118l-3.385-2.46c-.783-.57-.38-1.81.588-1.81h4.178a1 1 0 00.95-.69l1.286-3.967z" />
-                        </svg>
-                        60
-                      </span>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
@@ -437,11 +433,18 @@ export default function Home() {
                     Monad Tachyon
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    2025年内に発売予定の、かなりこだわっている開発中のゲームです。
+                    かなり気合を入れて鋭意開発している2D
+                    探索型アクションゲームです。2025 年内に Steam
+                    で発売することを目指しています。
+                    「世界最速メトロイドヴァニア」をコンセプトに、爽快でスピーディーなアクションが楽しめます。
+                    一見難しそうに見えるかも知れませんが、基本的にプレイに必要なボタンは十字ボタンと
+                    A, B
+                    ボタンだけで誰でも簡単に遊ぶことができる工夫をしています。
+                    未だ開発途中ですが、独自に構築したレベルエディタをはじめとする各種ツールを活用し、生産性を高めつつ短期間で最大限の成果を挙げられる体制を構築しています。
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <a
-                      href="https://siv3d.github.io/ja-jp/event/gamejam2023/"
+                      href="https://store.steampowered.com/app/3328960/Monad_Tachyon/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-[#171a21] rounded-full text-white hover:bg-[#2a3f5f] transition-colors"
