@@ -2,8 +2,6 @@
 
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import { AnimatedSection } from "./components/AnimatedSection";
-import { ProjectTree } from "./components/ProjectTree";
-import { projects } from "./types/project";
 import Image from "next/image";
 import {
   FaGithub,
@@ -231,23 +229,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="section bg-gray-50">
-        <div className="container">
-          <h2 className="heading-2 text-center mb-12">Projects</h2>
-          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            {projects.map((project) => (
-              <ProjectTree key={project.id} project={project} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Project Section */}
-      <section id="new-project" className="section bg-gray-50">
+      <section id="project" className="section bg-gray-50">
         <div className="container">
           <AnimatedSection>
-            <h2 className="heading-2 mb-6">Projects</h2>
+            <h2 className="heading-2 text-center mb-6">Projects</h2>
             <div className="space-y-12">
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <div className="flex flex-col md:flex-row gap-6">
