@@ -5,8 +5,9 @@ export const SubProjects = () => {
   return (
     <div className="mt-16">
       <h2 className="heading-2 text-center mb-6">Sub Projects</h2>
-      <p className="text-center text-gray-500 text-sm mb-6">
-        クリックすると展開されます
+      <p className="text-center text-sm mb-6">
+        その他のプロジェクトです
+        <p className="text-gray-500 ">クリックすると展開されます</p>
       </p>
       <div className="space-y-6">
         {/* F0V2 Game Engine */}
@@ -68,6 +69,61 @@ export const SubProjects = () => {
                   className="rounded-lg shadow-lg max-h-64 mb-2"
                 />
                 <span className="text-gray-500 text-sm">デモ画像</span>
+              </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        {/* EmojiInput */}
+        <CollapsibleSection
+          title={
+            <div>
+              <div className="text-2xl font-bold text-primary-800">
+                EmojiInput
+              </div>
+              <div className="text-sm text-gray-600 mt-1">
+                Windows 用の絵文字入力 IME
+              </div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                Windows 用の絵文字入力 IME です。 Windows
+                には標準の絵文字入力機能がありますが、入力しづらく使いづらいと感じていたので独自に開発しました。
+                タスク常駐アプリであり、使い勝手のよいアプリケーションです。
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <a
+                  href="https://github.com/sashi0034/EmojiInput"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                >
+                  <FaGithub className="w-5 h-5" />
+                  <span>GitHub</span>
+                </a>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C#
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  WPF
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Windows
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center">
+                <img
+                  src="https://camo.githubusercontent.com/7273959be3cf016a6672fdac705bc2f37b9335a07ba7375c47d5246f2810af14/68747470733a2f2f692e6779617a6f2e636f6d2f37386133636636373966323538616362663664626334306631326538616366332e676966"
+                  alt="EmojiInput デモ画像"
+                  className="rounded-lg shadow-lg max-h-64 mb-2"
+                />
               </div>
             </div>
           </div>
