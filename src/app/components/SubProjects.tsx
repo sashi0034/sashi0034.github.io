@@ -121,10 +121,62 @@ export const SubProjects = () => {
               <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center">
                 <img
                   src="https://camo.githubusercontent.com/7273959be3cf016a6672fdac705bc2f37b9335a07ba7375c47d5246f2810af14/68747470733a2f2f692e6779617a6f2e636f6d2f37386133636636373966323538616362663664626334306631326538616366332e676966"
-                  alt="EmojiInput デモ画像"
+                  alt="EmojiInput screenshot"
                   className="rounded-lg shadow-lg max-h-64 mb-2"
                 />
               </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        {/* OutputClipboard */}
+        <CollapsibleSection
+          title={
+            <div>
+              <div className="text-2xl font-bold text-primary-800">
+                OutputClipboard
+              </div>
+              <div className="text-sm text-gray-600 mt-1">
+                Windows エクスプローラーにクリップボード貼り付けメニューを追加
+              </div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                Windows
+                でエクスプローラーのコンテクストメニューからクリップボードの画像を保存することが出来るソフトウェアです。
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <a
+                  href="https://github.com/sashi0034/OutputClipboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                >
+                  <FaGithub className="w-5 h-5" />
+                  <span>GitHub</span>
+                </a>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C#
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  WPF
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Windows
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <img
+                src="https://camo.githubusercontent.com/20564b27c0a73d0f2fd8f275725a839cdf8d52ea801f84baeec83efb3c7e39e9/68747470733a2f2f692e6779617a6f2e636f6d2f30323635303231376364613264653138363631353131653364316432363939662e676966"
+                alt="OutputClipboard screenshot"
+                className="rounded-lg shadow-lg max-h-64 mb-2"
+              />
             </div>
           </div>
         </CollapsibleSection>
