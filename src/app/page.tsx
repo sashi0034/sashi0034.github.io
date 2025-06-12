@@ -545,60 +545,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="section bg-white">
+      {/* Footer Section */}
+      <footer className="bg-gray-50 py-8 border-t border-gray-200">
         <div className="container">
-          <h2 className="heading-2 text-center mb-12">Contact</h2>
-          <div className="max-w-2xl mx-auto">
-            <form className="space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  お名前
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  メールアドレス
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  メッセージ
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
-                ></textarea>
-              </div>
-              <div className="text-center">
-                <button type="submit" className="btn">
-                  送信する
-                </button>
-              </div>
-            </form>
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex items-center space-x-4">
+              <a
+                href="https://github.com/sashi0034"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary-600 transition-colors"
+              >
+                <FaGithub className="w-8 h-8" />
+              </a>
+            </div>
+            <p className="text-sm text-gray-500">
+              © {new Date().getFullYear()} sashi. All rights reserved.
+            </p>
           </div>
         </div>
-      </section>
+      </footer>
     </main>
   );
 }
