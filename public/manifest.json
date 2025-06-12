@@ -2,13 +2,14 @@
   "name": "sashi portfolio",
   "short_name": "sashi",
   "description": "Welcome to my portfolio website",
-  "start_url": "/",
+  "start_url": "/sashi0034.github.io/",
+  "scope": "/sashi0034.github.io/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0284c7",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "/sashi0034.github.io/favicon.ico",
       "sizes": "64x64",
       "type": "image/x-icon"
     }

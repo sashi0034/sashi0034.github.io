@@ -7,6 +7,7 @@ const nextConfig = {
   swcMinify: true,
   output: 'export',
   basePath,
+  distDir: 'out',
   images: {
     unoptimized: true,
   },
@@ -18,6 +19,10 @@ const nextConfig = {
         fs: false,
       }
     }
+    config.module.rules.push({
+      test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      type: 'asset/resource',
+    })
     return config
   }
 }
