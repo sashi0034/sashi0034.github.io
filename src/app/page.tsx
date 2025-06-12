@@ -1,14 +1,15 @@
-'use client'
+"use client";
 
-import { ArrowDownIcon } from '@heroicons/react/24/outline'
-import { AnimatedSection } from './components/AnimatedSection'
-import { ProjectTree } from './components/ProjectTree'
-import { projects } from './types/project'
-import Image from 'next/image'
+import { ArrowDownIcon } from "@heroicons/react/24/outline";
+import { AnimatedSection } from "./components/AnimatedSection";
+import { ProjectTree } from "./components/ProjectTree";
+import { projects } from "./types/project";
+import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 // 画像のベースパスを設定
-const isProd = process.env.NODE_ENV === 'production'
-const basePath = ''
+const isProd = process.env.NODE_ENV === "production";
+const basePath = "";
 
 export default function Home() {
   return (
@@ -22,9 +23,9 @@ export default function Home() {
               <span className="block">portfolio</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              クリエイティブなソリューションを提供する
-              <br className="hidden sm:block" />
-              エンジニアのポートフォリオサイトへようこそ
+              ゲーム開発をしています
+              {/* <br className="hidden sm:block" />
+              エンジニアのポートフォリオサイトへようこそ */}
             </p>
             <AnimatedSection
               initial={{ opacity: 0 }}
@@ -67,21 +68,39 @@ export default function Home() {
                   className="rounded-full border border-gray-200"
                   priority
                 />
-                <h3 className="heading-3 ml-4">プロフィール</h3>
+                <h3 className="heading-3 ml-4">sashi</h3>
               </div>
               <p className="text-gray-600 mb-6">
-                ここにあなたの自己紹介文を入れてください。
-                あなたの経歴、スキル、興味のある分野などを
-                簡潔に説明しましょう。
+                ゲームを遊ぶことはもちろんのこと、ゲーム開発に関する技術が大好きで、日々学習しながら開発を行っています。
               </p>
               <div className="space-y-4">
+                <div className="flex items-center">
+                  <span className="w-24 font-medium">GitHub</span>
+                  <a
+                    href="https://github.com/sashi0034"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-600 hover:text-primary-700 flex items-center gap-2"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    @sashi0034
+                  </a>
+                </div>
                 <div className="flex items-center">
                   <span className="w-24 font-medium">スキル</span>
                   <span className="text-gray-600">ここにスキルを記載</span>
                 </div>
-                <div className="flex items-center">
-                  <span className="w-24 font-medium">経験</span>
-                  <span className="text-gray-600">ここに経験を記載</span>
+                <div>
+                  <span className="w-24 font-medium block mb-2">経歴</span>
+                  <ul className="list-disc list-inside space-y-1 ml-6">
+                    <li className="text-gray-600">
+                      2025年4月 - 現在: 京都大学 大学院情報学研究科
+                      通信情報システムコース 修士課程
+                    </li>
+                    <li className="text-gray-600">
+                      2021年4月 - 2025年3月: 京都大学 工学部情報学科
+                    </li>
+                  </ul>
                 </div>
               </div>
             </AnimatedSection>
@@ -90,18 +109,11 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               className="bg-primary-100 rounded-lg p-8"
             >
-              <h3 className="heading-3 mb-4">スキルセット</h3>
-              <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-sm font-medium">スキル1</span>
-                    <span className="text-sm text-gray-600">90%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-primary-600 h-2 rounded-full" style={{ width: '90%' }}></div>
-                  </div>
-                </div>
-              </div>
+              <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sashi0034&layout=compact&theme=onedark&langs_count=20"
+                alt="Top Languages"
+                className="rounded-lg shadow-lg w-full"
+              />
             </AnimatedSection>
           </div>
         </div>
@@ -113,10 +125,7 @@ export default function Home() {
           <h2 className="heading-2 text-center mb-12">Projects</h2>
           <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
             {projects.map((project) => (
-              <ProjectTree
-                key={project.id}
-                project={project}
-              />
+              <ProjectTree key={project.id} project={project} />
             ))}
           </div>
         </div>
@@ -129,7 +138,10 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   お名前
                 </label>
                 <input
@@ -139,7 +151,10 @@ export default function Home() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   メールアドレス
                 </label>
                 <input
@@ -149,7 +164,10 @@ export default function Home() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   メッセージ
                 </label>
                 <textarea
@@ -168,5 +186,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )
+  );
 }
