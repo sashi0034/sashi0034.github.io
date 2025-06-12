@@ -5,9 +5,9 @@ const basePath = isProd ? '/sashi0034.github.io' : ''
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',
+  output: isProd ? 'export' : undefined,
   basePath,
-  distDir: 'out',
+  ...(isProd && { distDir: 'out' }),
   images: {
     unoptimized: true,
   },
