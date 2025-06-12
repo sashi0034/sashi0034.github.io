@@ -106,7 +106,7 @@ export default function Home() {
                   <span className="w-24 font-medium block mb-2">経歴</span>
                   <ul className="list-disc list-inside space-y-1 ml-6">
                     <li className="text-gray-600">
-                      2025年4月 - 現在: 京都大学 大学院情報学研究科
+                      2025年4月 - 現在: 京都大学大学院 情報学研究科
                       通信情報システムコース 修士課程
                     </li>
                     <li className="text-gray-600">
@@ -426,6 +426,51 @@ export default function Home() {
                       alt="angel-lsp project image"
                       className="rounded-lg shadow-lg w-full max-w-xs"
                     />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <div className="flex flex-col md:flex-row gap-6">
+                <div className="md:w-1/2">
+                  <h3 className="text-2xl font-bold text-primary-800 mb-2">
+                    Monad Tachyon
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    2025年内に発売予定の、かなりこだわっている開発中のゲームです。
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <a
+                      href="https://siv3d.github.io/ja-jp/event/gamejam2023/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-[#171a21] rounded-full text-white hover:bg-[#2a3f5f] transition-colors"
+                    >
+                      <FaSteam className="w-5 h-5" />
+                      <span>Steam</span>
+                    </a>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      C++
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      Siv3D
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      HLSL
+                    </span>
+                  </div>
+                </div>
+                <div className="md:w-1/2">
+                  <div className="aspect-video">
+                    <iframe
+                      className="w-full h-full rounded-lg"
+                      src="https://www.youtube.com/embed/wDqKggP4Xxk"
+                      title="Monad Tachyon - Gameplay Trailer"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                   </div>
                 </div>
               </div>
