@@ -4,7 +4,7 @@ import { CollapsibleSection } from "./CollapsibleSection";
 export const SubProjects = () => {
   return (
     <div className="mt-16">
-      <h2 className="heading-2 text-center mb-6">Sub Projects</h2>
+      <h2 className="heading-2 text-center mb-6">Other Projects</h2>
       <p className="text-center text-sm mb-6">
         その他のプロジェクトです
         <br />
@@ -31,14 +31,14 @@ export const SubProjects = () => {
                   で一からゲームエンジン開発をしています。現在は、以下の機能などが実装済みです。
                 </p>
                 <ul className="list-disc list-inside text-gray-600 mb-4">
-                  <li>png など画像読み込み</li>
+                  <li>png などの画像読み込み</li>
                   <li>wavefront モデル読み込み</li>
                   <li>基本的な描画処理 (RenderTarget なども)</li>
                   <li>基本的なライティング処理</li>
                   <li>キーボードやゲームパッド入力</li>
                   <li>Dear ImGUI による GUI</li>
                 </ul>
-                構想中のオープンワールド風フライトシューティングゲームをエンジンを開発しながら作りたいと考えています。
+                まだまだプロトタイプの域を出ない代物ですが、エンジン本体とともに構想中のオープンワールド風フライトシューティングゲームを作りたいと考えています。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <a
@@ -94,7 +94,7 @@ export const SubProjects = () => {
               <p className="text-gray-600 mb-4">
                 Windows 用の絵文字入力 IME です。 Windows
                 には標準の絵文字入力機能がありますが、入力しづらく使いづらいと感じていたので独自に開発しました。
-                タスク常駐アプリであり、使い勝手のよいアプリケーションです。
+                タスク常駐アプリであり、使い勝手のよいソフトウェアです。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
@@ -256,7 +256,7 @@ export const SubProjects = () => {
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
                 GBEmu と同様に C++ で実装したファミコンのエミュレータです。
-                こちらも描画のパフォーマンスは良好ですが、メモリユニットの実装を最適化出来たと思います。
+                こちらも描画のパフォーマンスは良好ですが、メモリ管理ユニットの実装を最適化出来たと思います。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
@@ -307,11 +307,12 @@ export const SubProjects = () => {
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
                 Unity
-                で作ったゲームはいくつかあるのですが、ここではオンライン対戦を実装したゲームを代表して掲載します。
-                アルバイトで Photon
+                で作ったゲームはいくつかあるのですが、ここではオンライン対戦を実装した
+                3D ゲームを代表して掲載します。 アルバイトで Photon
                 を使ったオンライン対戦を実装したことがあり、その経験を活かして
                 Photon Fusion を使いました。
                 あまりテストプレイが出来ておらず正直ゲームバランスはよろしくないのですが、実装自体はかなりしっかり出来ていたと思います。
+                自分のユニットを動かしながらミサイルを発射してバトルロワイヤルをするゲームです。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
@@ -366,6 +367,7 @@ export const SubProjects = () => {
                 を入門する傍らに昔作ったミニゲームです。SDL2を使用してグラフィックを実装し、Haskell
                 の関数型プログラミングの特徴を活かした実験的な実装になっています。
                 敵に当たらないようにとうもろこしを回収するだけのゲームです。
+                関数型プログラミング言語を学んだ知識や経験は、一般的なオブジェクト指向プログラミングをするときにも役立っています。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
