@@ -7,9 +7,9 @@ export const SubProjects = () => {
     <div className="mt-16">
       <h2 className="heading-2 text-center mb-6">Other Projects</h2>
       <p className="text-center text-sm mb-6">
-        その他のプロジェクトです
+        上記で取り上げなかったプロジェクトのうちいくつかを以下に記載します。
         <br />
-        クリックすると展開されます
+        クリックすると展開されます。
         {/* <p className="text-gray-500 ">クリックすると展開されます</p> */}
       </p>
       <div className="space-y-6">
@@ -30,7 +30,7 @@ export const SubProjects = () => {
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
                 <p className="text-gray-600 mb-4">
-                  DirectX 12
+                  前述の通り、DirectX 12
                   で一からゲームエンジン開発をしています。現在は、以下の機能などが実装済みです。
                 </p>
                 <ul className="list-disc list-inside text-gray-600 mb-4">
@@ -204,7 +204,7 @@ export const SubProjects = () => {
                 EmojiInput
               </div>
               <div className="text-sm text-gray-600 mt-1">
-                Windows 用の絵文字入力 IME
+                Windows 絵文字入力 IME
               </div>
             </div>
           }
@@ -266,7 +266,8 @@ export const SubProjects = () => {
                 OutputClipboard
               </div>
               <div className="text-sm text-gray-600 mt-1">
-                Windows エクスプローラーにクリップボード貼り付けメニューを追加
+                Windows
+                エクスプローラーにクリップボードの画像を保存する項目を追加
               </div>
             </div>
           }
