@@ -86,7 +86,7 @@ export default function Home() {
                 <h3 className="heading-3 ml-4">sashi</h3>
               </div>
               <p className="text-gray-600 mb-6">
-                ゲームを遊ぶことはもちろんのこと、ゲーム開発に関する技術が大好きで、日々学習しながら開発を行っています。
+                ゲームを遊ぶことはもちろんのこと、ゲーム開発に関する技術が大好きで、日々学習しながら開発を行っています。ピクセルアートも描いています。
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">

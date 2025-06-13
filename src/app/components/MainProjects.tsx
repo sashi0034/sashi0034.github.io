@@ -217,6 +217,28 @@ export const MainProjects = () => {
                     <FaSteam className="w-5 h-5" />
                     <span>Steam</span>
                   </a>
+                  <a
+                    href="https://gamebiz.jp/news/396584"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-800 hover:bg-blue-200 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                      />
+                    </svg>
+                    <span>紹介記事</span>
+                  </a>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
@@ -231,7 +253,7 @@ export const MainProjects = () => {
                 </div>
               </div>
               <div className="md:w-1/2">
-                <div className="aspect-video">
+                <div className="aspect-video mb-4">
                   <iframe
                     className="w-full h-full rounded-lg"
                     src="https://www.youtube.com/embed/wDqKggP4Xxk"
@@ -239,6 +261,23 @@ export const MainProjects = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Steam ストアページ用のトレーラー動画。
+                  </p>
+                </div>
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/r3NBNPyiwrM"
+                    title="Monad Tachyon - Gameplay Showcase"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                  <p className="text-sm text-gray-600 mt-2">
+                    自作レベルエディタのデモ動画。ブラシやスポイトの他にも Undo
+                    / Redo
+                    なども実装してあり、多機能で使いやすいエディタとなっています。
+                  </p>
                 </div>
               </div>
             </div>
