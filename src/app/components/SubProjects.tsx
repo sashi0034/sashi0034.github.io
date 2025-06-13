@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import { SiIntel } from "react-icons/si";
 import { CollapsibleSection } from "./CollapsibleSection";
 
 export const SubProjects = () => {
@@ -16,7 +17,9 @@ export const SubProjects = () => {
         <CollapsibleSection
           title={
             <div>
-              <div className="text-2xl font-bold text-primary-800">自作ゲームエンジン</div>
+              <div className="text-2xl font-bold text-primary-800">
+                自作ゲームエンジン
+              </div>
               <div className="text-sm text-gray-600 mt-1">
                 DirectX 12 ゲームエンジンとそれで作るゲーム
               </div>
@@ -458,6 +461,83 @@ export const SubProjects = () => {
                   alt="DD Backup screenshot"
                   className="rounded-lg shadow-lg max-h-64 mb-2"
                 />
+              </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        {/* AMX Basic Example */}
+        <CollapsibleSection
+          title={
+            <div>
+              <div className="text-2xl font-bold text-primary-800">
+                AMX Basic Example
+              </div>
+              <div className="text-sm text-gray-600 mt-1">
+                Intel Advanced Matrix Extensions の基本的な使用例
+              </div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                Intel の Advanced Matrix Extensions (AMX)
+                を使用した基本的な行列演算のサンプルコードです。 AMX は Intel
+                の最新 CPU
+                で利用可能な行列演算用の拡張命令セットで、機械学習などの計算を高速化することができます。
+                Intel
+                の公式ドキュメントにコードサンプルは掲載されていますが、説明や実装が不十分な箇所が見受けられました。
+                本リポジトリでは、それらの問題点を解消し、初学者でも理解しやすいようにコメント付きで整理されたコードで行列積演算（int8,
+                bf16）や畳み込み演算（int8）の実装例を提供しています。
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/sashi0034/amx-basic-example"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    <span>GitHub</span>
+                  </a>
+                  <img
+                    src="https://img.shields.io/github/stars/sashi0034/amx-basic-example?style=flat-square&label=stars"
+                    alt="GitHub stars"
+                    className="h-6"
+                  />
+                  <a
+                    href="https://www.intel.com/content/www/us/en/developer/articles/code-sample/advanced-matrix-extensions-intrinsics-functions.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-800 hover:bg-blue-200 transition-colors"
+                  >
+                    <SiIntel className="w-5 h-5" />
+                    <span>公式ドキュメント</span>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Intel AMX
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  SIMD
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center p-4">
+                <div className="text-gray-600 text-sm mb-2">実装例:</div>
+                <ul className="text-gray-600 text-sm list-disc list-inside">
+                  <li>int8 行列積演算</li>
+                  <li>bf16 行列積演算</li>
+                  <li>int8 畳み込み演算</li>
+                </ul>
               </div>
             </div>
           </div>
