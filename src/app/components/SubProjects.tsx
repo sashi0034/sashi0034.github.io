@@ -382,7 +382,7 @@ export const SubProjects = () => {
               <p className="text-gray-600 mb-4">
                 GBEmu と同様に C++ で実装したファミコンのエミュレータです。
                 こちらも描画のパフォーマンスは良好ですが、GBEmu
-                と比較するとメモリ管理ユニットの実装をかなり最適化しています。
+                と比較するとメモリ管理ユニットがかなり最適化された実装になっています。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
