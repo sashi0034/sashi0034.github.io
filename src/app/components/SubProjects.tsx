@@ -536,6 +536,11 @@ export const SubProjects = () => {
             </div>
             <div className="md:w-1/2 flex items-center justify-center">
               <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center p-4">
+                <img
+                  src="/images/screenshot/intel-amx.png"
+                  alt="intel-amx"
+                  className="rounded-lg shadow-lg max-h-64 mb-2"
+                />
                 <div className="text-gray-600 text-sm mb-2">実装例:</div>
                 <ul className="text-gray-600 text-sm list-disc list-inside">
                   <li>int8 行列積演算</li>
