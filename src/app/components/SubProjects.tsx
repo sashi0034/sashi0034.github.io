@@ -7,7 +7,7 @@ export const SubProjects = () => {
     <div className="mt-16">
       <h2 className="heading-2 text-center mb-6">Other Projects</h2>
       <p className="text-center text-sm mb-6">
-        上記で取り上げなかったプロジェクトのうちいくつかを以下に記載します。
+        上記で取り上げなかったプロジェクトのうち代表していくつかを以下に記載します。
         <br />
         クリックすると展開されます。
         {/* <p className="text-gray-500 ">クリックすると展開されます</p> */}
@@ -214,7 +214,9 @@ export const SubProjects = () => {
               <p className="text-gray-600 mb-4">
                 Windows 用の絵文字入力 IME です。 Windows
                 には標準の絵文字入力機能がありますが、入力しづらく使いづらいと感じていたので独自に開発しました。
-                タスク常駐アプリであり、使い勝手のよいソフトウェアです。
+                タスク常駐アプリであり、特定のショートカットキーを押すことで表示される絵文字入力用ポップアップからテキストボックスに絵文字を入力できます。
+                私はゲーム開発の際にログや UI
+                として絵文字を多用するのでこのアプリケーションを重宝しています。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
@@ -259,7 +261,7 @@ export const SubProjects = () => {
         </CollapsibleSection>
 
         {/* OutputClipboard */}
-        <CollapsibleSection
+        {/* <CollapsibleSection
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
@@ -309,7 +311,7 @@ export const SubProjects = () => {
               />
             </div>
           </div>
-        </CollapsibleSection>
+        </CollapsibleSection> */}
 
         {/* GBEmu */}
         <CollapsibleSection
@@ -328,9 +330,9 @@ export const SubProjects = () => {
                 C++ で実装した Game Boy エミュレータです。 PPU (グラフィック) は
                 GPU
                 を使用するように実装しており、パフォーマンスはかなり良好です。
-                APU (サウンド) の実装も行いました。 カートリッジの対応は MBC1
-                のみしています。 あまり C++
-                に慣れていないときに書いたコードなので、実装に荒い部分が少々あります。
+                APU (サウンド) の実装も行いました。 カートリッジは MBC1
+                のみ対応しています。
+                {/* あまり C++ に慣れていないときに書いたコードなので、実装に荒い部分が少々あります。 */}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <a
@@ -377,7 +379,8 @@ export const SubProjects = () => {
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
                 GBEmu と同様に C++ で実装したファミコンのエミュレータです。
-                こちらも描画のパフォーマンスは良好ですが、メモリ管理ユニットの実装を最適化出来たと思います。
+                こちらも描画のパフォーマンスは良好ですが、GBEmu
+                と比較するとメモリ管理ユニットの実装をかなり最適化しています。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
