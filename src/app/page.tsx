@@ -125,7 +125,7 @@ export default function Home() {
               className="bg-primary-100 rounded-lg p-8"
             >
               <img
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sashi0034&layout=compact&theme=onedark&langs_count=20"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sashi0034&layout=compact&langs_count=20"
                 alt="Top Languages"
                 className="rounded-lg shadow-lg w-full"
               />

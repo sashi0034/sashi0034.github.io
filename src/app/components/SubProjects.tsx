@@ -16,7 +16,7 @@ export const SubProjects = () => {
         <CollapsibleSection
           title={
             <div>
-              <div className="text-2xl font-bold text-primary-800">F0V2</div>
+              <div className="text-2xl font-bold text-primary-800">自作ゲームエンジン</div>
               <div className="text-sm text-gray-600 mt-1">
                 DirectX 12 ゲームエンジンとそれで作るゲーム
               </div>
@@ -71,6 +71,123 @@ export const SubProjects = () => {
                   className="rounded-lg shadow-lg max-h-64 mb-2"
                 />
                 <span className="text-gray-500 text-sm">デモ画像</span>
+              </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        {/* Kamekani Gassen */}
+        <CollapsibleSection
+          title={
+            <div>
+              <div className="text-2xl font-bold text-primary-800">
+                Unity で開発したゲーム
+              </div>
+              <div className="text-sm text-gray-600 mt-1">
+                Photon Fusion によるオンライン対戦
+              </div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                Unity
+                で作ったゲームはいくつかあるのですが、ここではオンライン対戦を実装した
+                3D ゲームを代表して掲載します。 アルバイトで Photon
+                を使ったオンライン対戦を実装したことがあり、その経験を活かして
+                Photon Fusion を使いました。
+                あまりテストプレイが出来ておらず正直ゲームバランスはよろしくないのですが、実装自体はかなりしっかり出来ていたと思います。
+                自分のユニットを動かしながらミサイルを発射してバトルロワイヤルをするゲームです。
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://unityroom.com/games/kamekani-gassen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <span>unityroom</span>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Unity
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C#
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Photon
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <img
+                src="https://os-worker.unityroom.com/unityroom_production/icon/42191/icon_20230305_003311.gif?h=1677943991"
+                alt="かめかに合戦 screenshot"
+                className="rounded-lg shadow-lg max-h-64 mb-2"
+              />
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        {/* hello-seed */}
+        <CollapsibleSection
+          title={
+            <div>
+              <div className="text-2xl font-bold text-primary-800">
+                関数型プログラミング言語で開発したゲーム
+              </div>
+              <div className="text-sm text-gray-600 mt-1">
+                関数型プログラミング言語 Haskell と SDL2 で作ったミニゲーム
+              </div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                Haskell
+                を入門する傍らに昔作ったミニゲームです。SDL2を使用してグラフィックを実装し、Haskell
+                の関数型プログラミングの特徴を活かした実験的な実装になっています。
+                敵に当たらないようにとうもろこしを回収するだけのゲームです。
+                関数型プログラミング言語を学んだ知識や経験は、一般的なオブジェクト指向プログラミングをするときにも役立っています。
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://github.com/sashi0034/hello-seed"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Haskell
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  SDL2
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Stack
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center">
+                <img
+                  src="https://user-images.githubusercontent.com/82739042/210538385-2c5b3b61-8239-4b0c-94e3-886eb4a25b34.png"
+                  alt="OutputClipboard screenshot"
+                  className="rounded-lg shadow-lg max-h-64 mb-2"
+                />
               </div>
             </div>
           </div>
@@ -290,15 +407,15 @@ export const SubProjects = () => {
           </div>
         </CollapsibleSection>
 
-        {/* Kamekani Gassen */}
+        {/* DD Backup */}
         <CollapsibleSection
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
-                Unity で開発したゲーム
+                DD Backup
               </div>
               <div className="text-sm text-gray-600 mt-1">
-                Photon Fusion によるオンライン対戦
+                Rust で作ったファイルバックアップ GUI アプリケーション
               </div>
             </div>
           }
@@ -306,99 +423,39 @@ export const SubProjects = () => {
           <div className="flex flex-col md:flex-row gap-6">
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
-                Unity
-                で作ったゲームはいくつかあるのですが、ここではオンライン対戦を実装した
-                3D ゲームを代表して掲載します。 アルバイトで Photon
-                を使ったオンライン対戦を実装したことがあり、その経験を活かして
-                Photon Fusion を使いました。
-                あまりテストプレイが出来ておらず正直ゲームバランスはよろしくないのですが、実装自体はかなりしっかり出来ていたと思います。
-                自分のユニットを動かしながらミサイルを発射してバトルロワイヤルをするゲームです。
+                プログラミング言語 Rust
+                の学習がてらに開発したファイルバックアップ用 GUI
+                アプリケーションです。 Iced というフレームワークを用いています。
+                シンプルで使いやすいインターフェースを提供し、ファイルのバックアップとエクスポートを管理することができます。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <div className="flex items-center gap-2">
-                  <a
-                    href="https://unityroom.com/games/kamekani-gassen"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
-                  >
-                    <span>unityroom</span>
-                  </a>
-                </div>
+                <a
+                  href="https://github.com/sashi0034/dd-backup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                >
+                  <FaGithub className="w-5 h-5" />
+                  <span>GitHub</span>
+                </a>
               </div>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                  Unity
+                  Rust
                 </span>
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                  C#
+                  Iced
                 </span>
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                  Photon
-                </span>
-              </div>
-            </div>
-            <div className="md:w-1/2 flex items-center justify-center">
-              <img
-                src="https://os-worker.unityroom.com/unityroom_production/icon/42191/icon_20230305_003311.gif?h=1677943991"
-                alt="かめかに合戦 screenshot"
-                className="rounded-lg shadow-lg max-h-64 mb-2"
-              />
-            </div>
-          </div>
-        </CollapsibleSection>
-        {/* hello-seed */}
-        <CollapsibleSection
-          title={
-            <div>
-              <div className="text-2xl font-bold text-primary-800">
-                関数型プログラミング言語で開発したゲーム
-              </div>
-              <div className="text-sm text-gray-600 mt-1">
-                関数型プログラミング言語 Haskell と SDL2 で作ったミニゲーム
-              </div>
-            </div>
-          }
-        >
-          <div className="flex flex-col md:flex-row gap-6">
-            <div className="md:w-1/2">
-              <p className="text-gray-600 mb-4">
-                Haskell
-                を入門する傍らに昔作ったミニゲームです。SDL2を使用してグラフィックを実装し、Haskell
-                の関数型プログラミングの特徴を活かした実験的な実装になっています。
-                敵に当たらないようにとうもろこしを回収するだけのゲームです。
-                関数型プログラミング言語を学んだ知識や経験は、一般的なオブジェクト指向プログラミングをするときにも役立っています。
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <div className="flex items-center gap-2">
-                  <a
-                    href="https://github.com/sashi0034/hello-seed"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
-                  >
-                    <FaGithub className="w-5 h-5" />
-                    <span>GitHub</span>
-                  </a>
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                  Haskell
-                </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                  SDL2
-                </span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                  Stack
+                  GUI
                 </span>
               </div>
             </div>
             <div className="md:w-1/2 flex items-center justify-center">
               <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center">
                 <img
-                  src="https://user-images.githubusercontent.com/82739042/210538385-2c5b3b61-8239-4b0c-94e3-886eb4a25b34.png"
-                  alt="OutputClipboard screenshot"
+                  src="https://raw.githubusercontent.com/sashi0034/dd-backup/main/docs/screenshot.png"
+                  alt="DD Backup screenshot"
                   className="rounded-lg shadow-lg max-h-64 mb-2"
                 />
               </div>
