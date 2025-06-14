@@ -489,8 +489,10 @@ export const SubProjects = () => {
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
                 Intel の Advanced Matrix Extensions (AMX)
-                を使用した基本的な行列演算のサンプルコードです。 AMX は Intel
-                の最新 CPU
+                を使用した基本的な行列演算のサンプルコードです。
+                私は学部生の卒業研究で AMX
+                に関するテーマを扱っており、備忘録としてまとめました。 AMX は
+                Intel の最新 CPU
                 で利用可能な行列演算用の拡張命令セットで、機械学習などの計算を高速化することができます。
                 Intel
                 の公式ドキュメントにコードサンプルは掲載されていますが、説明や実装が不十分な箇所が見受けられました。

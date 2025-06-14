@@ -93,8 +93,8 @@ export const MainProjects = () => {
                 <p className="text-gray-600 mb-4">
                   AngelScript は Lua
                   のようにゲーム開発の現場で用いられる静的スクリプト言語です。
-                  この OSS プロジェクトは唯一無二の AngelScript 汎用 LSP
-                  クライエントであり、多くのゲーム開発者に使用されています。
+                  この OSS プロジェクトでは唯一無二の AngelScript 汎用 LSP
+                  クライエントを開発しており、これは多くのゲーム開発者に使用されています。
                   高性能な解析を行うために、コンパイラのフロントエンド部分を
                   TypeScript で一から実装しました。VSCode
                   などのクライアントで動作し、コーディングに欠かせない多くの機能が利用できます。
@@ -125,6 +125,11 @@ export const MainProjects = () => {
                     <img
                       src="https://img.shields.io/github/stars/sashi0034/angel-lsp?style=flat-square&label=stars"
                       alt="GitHub stars"
+                      className="h-6"
+                    />
+                    <img
+                      src="https://img.shields.io/visual-studio-marketplace/i/sashi0034.angel-lsp"
+                      alt="VS Marketplace installs"
                       className="h-6"
                     />
                   </div>
@@ -179,12 +184,22 @@ export const MainProjects = () => {
                   </span>
                 </div>
               </div>
-              <div className="md:w-1/2 flex items-center justify-center">
-                <img
-                  src="https://raw.githubusercontent.com/sashi0034/angel-lsp/main/sample.png"
-                  alt="angel-lsp project image"
-                  className="rounded-lg shadow-lg w-full max-w-xs"
-                />
+
+              <div className="md:w-1/2 flex flex-col gap-4">
+                <div className="flex items-center justify-center">
+                  <img
+                    src="\images\screenshot\angelscript.png"
+                    alt="angelscript"
+                    className="rounded-lg shadow-lg w-full max-w-xs"
+                  />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img
+                    src="https://raw.githubusercontent.com/sashi0034/angel-lsp/main/sample.png"
+                    alt="angel-lsp project image"
+                    className="rounded-lg shadow-lg w-full max-w-xs"
+                  />
+                </div>
               </div>
             </div>
           </div>
