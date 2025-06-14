@@ -417,7 +417,7 @@ export const SubProjects = () => {
         </CollapsibleSection>
 
         {/* DD Backup */}
-        <CollapsibleSection
+        {/* <CollapsibleSection
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
@@ -470,7 +470,7 @@ export const SubProjects = () => {
               </div>
             </div>
           </div>
-        </CollapsibleSection>
+        </CollapsibleSection> */}
 
         {/* AMX Basic Example */}
         <CollapsibleSection
