@@ -104,6 +104,7 @@ export const SubProjects = () => {
                 Photon Fusion をネットワークライブラリとして使用しました。
                 あまりテストプレイが出来ておらず正直ゲームバランスはよろしくないのですが、通信エラー時の対処など実装自体はかなりしっかり出来ています。
                 自分のユニットを動かしながらミサイルを発射してバトルロワイヤルをするゲームです。
+                対戦相手のプレイヤーがいない場合は AI がバトルに参加します。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
@@ -130,11 +131,17 @@ export const SubProjects = () => {
               </div>
             </div>
             <div className="md:w-1/2 flex items-center justify-center">
-              <img
-                src="https://os-worker.unityroom.com/unityroom_production/icon/42191/icon_20230305_003311.gif?h=1677943991"
-                alt="かめかに合戦 screenshot"
-                className="rounded-lg shadow-lg max-h-64 mb-2"
-              />
+              <div className="aspect-video w-full bg-gray-100 rounded-lg overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/D6MsIlz0LRs"
+                  title="Demo: Unity"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-lg"
+                ></iframe>
+              </div>
             </div>
           </div>
         </CollapsibleSection>
@@ -144,7 +151,7 @@ export const SubProjects = () => {
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
-                関数型プログラミング言語で開発したゲーム
+                純粋関数型プログラミング言語で開発したゲーム
               </div>
               <div className="text-sm text-gray-600 mt-1">
                 関数型プログラミング言語 Haskell と SDL2 で作ったミニゲーム
