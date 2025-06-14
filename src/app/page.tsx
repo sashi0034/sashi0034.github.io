@@ -103,7 +103,9 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <span className="w-24 font-medium">研究分野</span>
-                  <span className="text-gray-600">HPC (High Performance Computing)</span>
+                  <span className="text-gray-600">
+                    HPC (High Performance Computing)
+                  </span>
                 </div>
                 <div>
                   <span className="w-24 font-medium block mb-2">経歴</span>
@@ -211,6 +213,15 @@ export default function Home() {
                   <span>C言語, Fortran</span>
                   <span className="text-xs text-gray-600 mt-1">
                     スパコンの数値計算
+                  </span>
+                </div>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
+                  <FaServer className="w-4 h-4 text-primary-600" />
+                  <span>Rust</span>
+                  <span className="text-xs text-gray-600 mt-1">
+                    アプリケーション開発
                   </span>
                 </div>
               </div>
