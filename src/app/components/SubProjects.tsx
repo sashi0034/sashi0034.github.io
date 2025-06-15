@@ -38,6 +38,7 @@ export const SubProjects = () => {
                   <li>wavefront モデル読み込み</li>
                   <li>基本的な描画処理 (RenderTarget なども)</li>
                   <li>基本的なライティング処理</li>
+                  <li>GPGPU (ComputeShader)</li>
                   <li>キーボードやゲームパッド入力</li>
                   <li>Dear ImGUI による GUI</li>
                 </ul>
