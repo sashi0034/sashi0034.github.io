@@ -110,6 +110,15 @@ export const SubProjects = () => {
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
                   <a
+                    href="https://github.com/sashi0034/MissileReflexAsset"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    <span>GitHub</span>
+                  </a>
+                  <a
                     href="https://unityroom.com/games/kamekani-gassen"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -231,7 +240,7 @@ export const SubProjects = () => {
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
                   <a
-                    href="https://github.com/sashi0034/EmojiInput-lsp"
+                    href="https://github.com/sashi0034/EmojiInput"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
