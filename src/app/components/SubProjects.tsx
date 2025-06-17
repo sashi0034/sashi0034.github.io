@@ -172,8 +172,8 @@ export const SubProjects = () => {
           <div className="flex flex-col md:flex-row gap-6">
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
-                Haskell
-                を入門する傍らに昔作ったミニゲームです。SDL2を使用してグラフィックを実装し、Haskell
+                Haskell を入門する傍らに昔作ったミニゲームです。GUI
+                ライブラリとして SDL2 を選択し、プログラムは Haskell
                 の関数型プログラミングの特徴を活かした実験的な実装になっています。
                 敵に当たらないようにとうもろこしを回収するだけのゲームです。
                 関数型プログラミング言語を学んだ知識や経験は、一般的なオブジェクト指向プログラミングをするときにも役立っています。
@@ -204,12 +204,16 @@ export const SubProjects = () => {
               </div>
             </div>
             <div className="md:w-1/2 flex items-center justify-center">
-              <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center">
-                <img
-                  src="https://user-images.githubusercontent.com/82739042/210538385-2c5b3b61-8239-4b0c-94e3-886eb4a25b34.png"
-                  alt="OutputClipboard screenshot"
-                  className="rounded-lg shadow-lg max-h-64 mb-2"
-                />
+              <div className="aspect-video w-full bg-gray-100 rounded-lg overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/_zrn4j3-_Mk"
+                  title="Demo: Haskell Gamedev"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-lg"
+                ></iframe>
               </div>
             </div>
           </div>
