@@ -518,7 +518,7 @@ export const SubProjects = () => {
                 Intel
                 の公式ドキュメントにコードサンプルは掲載されていますが、説明や実装が不十分な箇所が見受けられました。
                 本リポジトリでは、それらの問題点を解消し、初学者でも理解しやすいようにコメント付きで整理されたコードで行列積演算（int8,
-                bf16）や畳み込み演算（int8）の実装例を提供しています。
+                bf16）や畳み込み演算（int8）の実装例を示しています。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <div className="flex items-center gap-2">
