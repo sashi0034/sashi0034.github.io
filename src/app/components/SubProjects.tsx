@@ -493,6 +493,66 @@ export const SubProjects = () => {
           </div>
         </CollapsibleSection> */}
 
+        {/* SimpleOCR */}
+        <CollapsibleSection
+          title={
+            <div>
+              <div className="text-2xl font-bold text-primary-800">
+                DirectX 12 上で機械学習
+              </div>
+              <div className="text-sm text-gray-600 mt-1">
+                DirectX 12 の Compute Shader
+                を使って機械学習を行うデモンストレーション
+              </div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                上記で掲載した DirectX 12 自作エンジンの GPGPU (Compute Shader)
+                API を使って機械学習をおこなうデモンストレーションです。 近年は
+                Python
+                の深層学習学習関連のライブラリ等を用いれば簡単に機械学習を行うことができますが、このプロジェクトでは外部ライブラリには頼らずに自分で一から機械学習プログラムを
+                C++ 及び Compute Shader (HLSL) で実装しています。
+                具体的には、画像を入力として手書き文字認識を行う三層ニューラルネットワークの実装を行っています。
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <a
+                  href="https://github.com/sashi0034/SimpleOCR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                >
+                  <FaGithub className="w-5 h-5" />
+                  <span>GitHub</span>
+                </a>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C++
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  DirectX 12
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  HLSL
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center">
+                <img
+                  src="https://i.gyazo.com/3fcb5fe504ab906b95e23cce281972fb.png"
+                  alt="デモ画像"
+                  className="rounded-lg shadow-lg max-h-64 mb-2"
+                />
+                {/* <span className="text-gray-500 text-sm">デモ画像</span> */}
+              </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+
         {/* AMX Basic Example */}
         <CollapsibleSection
           title={
