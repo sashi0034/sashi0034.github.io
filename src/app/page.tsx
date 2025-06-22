@@ -120,6 +120,26 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
+              
+              {/* Portfolio Image */}
+              <div className="mt-8 flex justify-center items-center gap-4">
+                <Image
+                  src={`${basePath}/images/screenshot/sp_96x96-export.png`}
+                  alt="sashi portfolio icon"
+                  width={200}
+                  height={200}
+                  className="rounded-xl shadow-lg"
+                  priority
+                />
+                <Image
+                  src={`${basePath}/images/screenshot/sp2_64x64-export.png`}
+                  alt="sashi portfolio icon 2"
+                  width={200}
+                  height={200}
+                  className="rounded-xl shadow-lg"
+                  priority
+                />
+              </div>
             </AnimatedSection>
             <AnimatedSection
               initial={{ opacity: 0, x: 20 }}
