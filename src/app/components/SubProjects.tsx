@@ -542,7 +542,7 @@ export const SubProjects = () => {
             <div className="md:w-1/2 flex items-center justify-center">
               <div className="aspect-video w-full bg-gray-100 rounded-lg flex flex-col items-center justify-center">
                 <img
-                  src="https://i.gyazo.com/3fcb5fe504ab906b95e23cce281972fb.png"
+                  src="https://github.com/sashi0034/SimpleOCR/raw/main/screenshot.png"
                   alt="デモ画像"
                   className="rounded-lg shadow-lg max-h-64 mb-2"
                 />
