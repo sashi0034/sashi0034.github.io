@@ -340,6 +340,68 @@ export const SubProjects = () => {
         <CollapsibleSection
           title={
             <div>
+              <div className="text-2xl font-bold text-primary-800">8-bit CPU</div>
+              <div className="text-sm text-gray-600 mt-1">
+                自作エミュレーター上で動作する 8-bit CPU プログラム
+              </div>
+            </div>
+          }
+        >
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
+              <p className="text-gray-600 mb-4">
+                CPU プロセッサについて学習していたときに、8-bit CPU である Z80 関連の開発に取り組みました。Z80 系の CPU を搭載したレトロゲームのハードウェアのエミュレーターを C++ で開発し、
+                その上で C で書いた自作 Z80 プログラムを動作させました。
+                エミュレータ開発において命令セットやメモリマップ、画像処理ユニットなどを一から実装したことでハードウェア動作に関する理解が大きく深まりました。
+                また、Z80 プログラミングを実際に取り組む中で、昔ながらの 8-bit プログラム特有の制約や工夫についても学ぶことができました。
+                <br />スクリーンショット中のドット絵も自作しています。8-bit 中で絵を表現するのは大変でしたが、昔の色数制限や解像度制限について体感する良い経験になりました。
+
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <a
+                  href="https://github.com/sashi0034/GBEmu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                >
+                  <FaGithub className="w-5 h-5" />
+                  <span>GitHub (エミュレータ)</span>
+                </a>
+                <a
+                  href="https://github.com/sashi0034/gbroccoli"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                >
+                  <FaGithub className="w-5 h-5" />
+                  <span>GitHub (Z80 プログラム)</span>
+                </a>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C++
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  C
+                </span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                  Assembly
+                </span>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex items-center justify-center">
+              <img
+                src="/images/screenshot/z80-game.png"
+                alt="GBEmu screenshot"
+                className="rounded-lg shadow-lg max-h-64 mb-2"
+              />
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        {/* <CollapsibleSection
+          title={
+            <div>
               <div className="text-2xl font-bold text-primary-800">GBEmu</div>
               <div className="text-sm text-gray-600 mt-1">
                 Game Boy エミュレータ
@@ -355,7 +417,6 @@ export const SubProjects = () => {
                 を使用するように実装しており、パフォーマンスはかなり良好です。
                 APU (サウンド) の実装も行いました。 カートリッジの規格は MBC1
                 のみ対応しています。
-                {/* あまり C++ に慣れていないときに書いたコードなので、実装に荒い部分が少々あります。 */}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <a
@@ -385,10 +446,10 @@ export const SubProjects = () => {
               />
             </div>
           </div>
-        </CollapsibleSection>
+        </CollapsibleSection> */}
 
         {/* Fumichou */}
-        <CollapsibleSection
+        {/* <CollapsibleSection
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
@@ -435,7 +496,7 @@ export const SubProjects = () => {
               />
             </div>
           </div>
-        </CollapsibleSection>
+        </CollapsibleSection> */}
 
         {/* DD Backup */}
         {/* <CollapsibleSection
