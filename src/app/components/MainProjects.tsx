@@ -11,7 +11,7 @@ export const MainProjects = () => {
             <div className="flex flex-col md:flex-row gap-6">
               <div className="md:w-1/2">
                 <h3 className="text-2xl font-bold text-primary-800 mb-2">
-                  99 人対戦の反重力レースゲーム
+                  (執筆中) 99 人対戦の反重力レースゲーム
                 </h3>
                 <p className="text-gray-600 mb-4">
                   ローレベル API である DirectX 12
@@ -428,11 +428,23 @@ export const MainProjects = () => {
                   と、CPU 側の前処理の OpenMP 並列化を組み合わせ、
                   スパコン上で効率的に動作する解析フレームワークを開発しています。
                   ユーザーは物理モデルに応じた境界積分関数を記述するだけで、汎用的かつ高性能な
-                  BEM 解析が可能です。
+                  BEM 解析が可能です。<br></br>
                   <span className="font-bold">
-                    また、この研究で用いる可視化ツールの開発には DirectX 12
-                    をバックエンドにした自作エンジンを使用しています。
+                    この研究では、NVIDIA GPU に搭載されている Tensor
+                    コアを活用しています。
                   </span>
+                  Tensor
+                  コアは行列積演算を高速に実行できる特殊なハードウェアユニットであり、これを用いることで
+                  大幅に計算速度を向上させることができます。
+                  研究では行列のメモリレイアウトを最適化し、より高速な Tensor
+                  コアを用いた行列積計算を実現しました。
+                  <br></br>
+                  現在こちらの研究は一段落しており、現在は H
+                  行列を用いた高速数値計算ライブラリの FORTRAN 実装を C
+                  に移植し、GPU 対応させる作業を行っています。
+                  <br></br>
+                  なお、研究で用いる可視化ツールの開発にも DirectX 12
+                  の自作エンジンを活用しています。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
