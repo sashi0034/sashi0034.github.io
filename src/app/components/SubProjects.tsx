@@ -14,7 +14,7 @@ export const SubProjects = () => {
       </p>
       <div className="space-y-6">
         {/* F0V2 Game Engine */}
-        <CollapsibleSection
+        {/* <CollapsibleSection
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
@@ -80,7 +80,7 @@ export const SubProjects = () => {
               </div>
             </div>
           </div>
-        </CollapsibleSection>
+        </CollapsibleSection> */}
 
         {/* Kamekani Gassen */}
         <CollapsibleSection
@@ -340,7 +340,9 @@ export const SubProjects = () => {
         <CollapsibleSection
           title={
             <div>
-              <div className="text-2xl font-bold text-primary-800">8-bit CPU</div>
+              <div className="text-2xl font-bold text-primary-800">
+                8-bit CPU
+              </div>
               <div className="text-sm text-gray-600 mt-1">
                 自作エミュレーター上で動作する 8-bit CPU プログラム
               </div>
@@ -350,12 +352,17 @@ export const SubProjects = () => {
           <div className="flex flex-col md:flex-row gap-6">
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
-                CPU プロセッサについて学習していたときに、8-bit CPU である Z80 関連の開発に取り組みました。Z80 系の CPU を搭載したレトロゲームのハードウェアのエミュレーターを C++ で開発し、
-                その上で C で書いた自作 Z80 プログラムを動作させました。
-                エミュレータ開発において命令セットやメモリマップ、画像処理ユニットなどを一から実装したことでハードウェア動作に関する理解が大きく深まりました。
-                また、Z80 プログラミングを実際に取り組む中で、昔ながらの 8-bit プログラム特有の制約や工夫についても学ぶことができました。
-                <br />スクリーンショット中のドット絵も自作しています。8-bit 中で絵を表現するのは大変でしたが、昔の色数制限や解像度制限について体感する良い経験になりました。
-
+                CPU プロセッサについて学習していたときに、8-bit CPU である Z80
+                関連の開発に取り組みました。Z80 系の CPU
+                を搭載したレトロゲームのハードウェアのエミュレーターを C++
+                で開発し、 その上で C で書いた自作 Z80
+                プログラムを動作させました。
+                エミュレータ開発において命令セットやメモリマップ、画像処理ユニットなどを一から実装したことでハードウェア動作に関する理解が大きく深まったと思います。
+                また、Z80 プログラミングを実際に取り組む中で、昔ながらの 8-bit
+                プログラム特有の制約や工夫についても学ぶことができました。
+                <br />
+                スクリーンショット中のドット絵も自作しています。8-bit
+                中で絵を表現するのは大変でしたが、昔の色数制限や解像度制限について体感する良い経験になりました。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <a
@@ -571,11 +578,14 @@ export const SubProjects = () => {
           <div className="flex flex-col md:flex-row gap-6">
             <div className="md:w-1/2">
               <p className="text-gray-600 mb-4">
-                上記で掲載した DirectX 12 自作エンジンの GPGPU (Compute Shader)
-                API を使って機械学習をおこなうデモンストレーションです。 近年は
-                Python
-                の深層学習関連のライブラリ等を用いれば手軽に機械学習を行うことができますが、このプロジェクトでは外部ライブラリには頼らず機械学習プログラムを一から C++ 及び Compute Shader (HLSL) で実装しています。
+                DirectX 12
+                自作エンジン上で機械学習をおこなうデモンストレーションです。
+                近年は Python
+                の深層学習関連のライブラリ等を用いれば手軽に機械学習を行うことができますが、このプロジェクトでは外部ライブラリには頼らず機械学習プログラムを一から
+                C++ 及び Compute Shader (HLSL) で GPGPU の実装をしています。
                 具体的には、画像を入力として手書き文字認識を行う三層ニューラルネットワークの実装を行っています。
+                例えば、手書きで「5」と書くと、ニューラルネットワークがその画像を解析して「5
+                である」と出力します。
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <a
