@@ -11,6 +11,87 @@ export const MainProjects = () => {
             <div className="flex flex-col md:flex-row gap-6">
               <div className="md:w-1/2">
                 <h3 className="text-2xl font-bold text-primary-800 mb-2">
+                  99 人対戦の反重力レースゲーム
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  ローレベル API である DirectX 12
+                  をバックエンドとした自作エンジン上を用いて C++
+                  で開発したゲームです。 グラフィック、物理、ゲーム AI
+                  といったインゲーム要素、他にもレベルエディタなども含めて自作しました。
+                  <br></br>
+                  このゲームの特徴的なグラフィック表現として、ラスタライズ方式のディファードレンダリングにレイマーチングを取り入れている点が挙げられます。それについては、こちらの記事で解説しています
+                  ()<br></br>
+                  実装において、物理部分は特に苦労しました。衝突処理の解決といったものは、意外とインターネット上に参考情報が少なく、試行錯誤の連続でした。三角形関連のプリミティブな衝突処理の実装から始まり、BVH
+                  の構築、衝突時の押し戻し処理など地道に実装を行いました。特に苦労したのは、地面上をスムーズに移動する処理です。ここでは、大学の講義で学んだガウス・ニュートン法が思いがけず役に立ちました。
+                  <br></br>
+                  対戦相手となるゲーム AI
+                  に関しては、スクエア・エニックスの三宅陽一郎さんの著書などで紹介されている「MCS-AI
+                  動的連携モデル」を参考にしました。<br></br>
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <a
+                    href="https://github.com/sashi0034/Sukuu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    <span>GitHub</span>
+                  </a>
+                  <a
+                    href="https://store.steampowered.com/app/3147480/Mutable_50/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                  >
+                    <FaSteam className="w-5 h-5" />
+                    <span>Steam</span>
+                  </a>
+                  <a
+                    href="https://siv3d.github.io/ja-jp/event/gamejam2023/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#171a21] rounded-full text-white hover:bg-[#2a3f5f] transition-colors"
+                  >
+                    <FaTrophy className="w-5 h-5" />
+                    <span>ゲームジャム</span>
+                  </a>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    C++
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    Siv3D
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    HLSL
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    Pixelart
+                  </span>
+                </div>
+              </div>
+              <div className="md:w-1/2">
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/UAZB_YyMgmQ"
+                    title="Mutable 50 - Gameplay Trailer"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection transition={{ duration: 0.8, delay: 0.1 }}>
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="md:w-1/2">
+                <h3 className="text-2xl font-bold text-primary-800 mb-2">
                   Mutable 50
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -93,11 +174,18 @@ export const MainProjects = () => {
                 <p className="text-gray-600 mb-4">
                   AngelScript は Lua
                   と同様にゲーム開発の現場で用いられる静的スクリプト言語です。
-                  この OSS プロジェクトでは唯一無二の AngelScript 汎用 LSP
-                  クライエントを開発しており、これは多くのゲーム開発者に使用されています。
+                  この OSS プロジェクトは AngelScript 汎用 LSP
+                  クライアントであり、 多くのゲーム開発者に使用されています。
                   高性能な解析を行うために、コンパイラのフロントエンド部分を
-                  TypeScript で一から実装しました。VSCode
+                  TypeScript で一から実装しています。VSCode
                   などのクライアントで動作し、コーディングに欠かせない多くの機能が利用できます。
+                  例えば、シンボル定義へのジャンプや参照検索、コード補完に加えて、型チェックや関数呼び出し時の引数チェックなども行えます。<br></br>
+                  私がこのソフトウェアを開発する前、AngelScript の IDE
+                  サポートは非常に貧弱であり、
+                  テキストファイル同然の編集作業を強いられていました。
+                  そこで、AngelScript
+                  を使ったゲーム開発をより快適に行うため、自分自身の開発環境を整える目的でこのプロジェクトを始めました。
+                  <br></br>
                   このソフトウェアは、実際のゲーム会社でも使用されている他、 OSS
                   で開発されている人気ゲームエンジン
                   <b>
@@ -110,6 +198,7 @@ export const MainProjects = () => {
                     </a>
                   </b>
                   といった実績があります。
+                  更に詳しい詳細は文末のリンクの開発記事で紹介しています。
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <div className="flex items-center gap-2">
@@ -214,7 +303,8 @@ export const MainProjects = () => {
                 </h3>
                 <p className="text-gray-600 mb-4">
                   かなり気合を入れて鋭意開発している2D
-                  探索型アクションゲームです。2025 年内に Steam
+                  探索型アクションゲームです。
+                  2026 年内に Steam
                   で発売することを目指しています。
                   「世界最速メトロイドヴァニア」をコンセプトに、爽快でスピーディーなアクションが楽しめます。
                   一見難しそうに見えるかも知れませんが、基本的にプレイに必要なボタンは十字ボタンと
@@ -320,7 +410,7 @@ export const MainProjects = () => {
                   BEM 解析が可能です。
                   <span className="font-bold">
                     また、この研究で用いる可視化ツールの開発には DirectX 12
-                    をバックエンドにした自作ゲームエンジンを使用しています。
+                    をバックエンドにした自作エンジンを使用しています。
                   </span>
                 </p>
                 <div className="flex flex-wrap gap-2">
