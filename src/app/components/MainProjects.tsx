@@ -11,7 +11,7 @@ export const MainProjects = () => {
             <div className="flex flex-col md:flex-row gap-6">
               <div className="md:w-1/2">
                 <h3 className="text-2xl font-bold text-primary-800 mb-2">
-                  (執筆中) 99 人対戦の反重力レースゲーム
+                  99 人対戦の反重力レースゲーム
                 </h3>
                 <p className="text-gray-600 mb-4">
                   ローレベル API である DirectX 12
@@ -19,8 +19,16 @@ export const MainProjects = () => {
                   で開発したゲームです。 グラフィック、物理、ゲーム AI
                   といったインゲーム要素、他にもレベルエディタなども含めて自作しました。
                   <br></br>
-                  このゲームの特徴的なグラフィック表現として、ラスタライズ方式のディファードレンダリングにレイマーチングを取り入れている点が挙げられます。それについては、こちらの記事で解説しています
-                  ()<br></br>
+                  このゲームの特徴的なグラフィック表現として、ラスタライズ方式のディファードレンダリングにレイマーチングを取り入れている点が挙げられます。それについては、文末の
+                  <a
+                    href="https://zenn.dev/sashi0034/articles/3f268022b4df9f"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    「レンダリング部分の記事」
+                  </a>
+                  で解説しています
+                  <br></br>
                   実装において、物理部分は特に苦労しました。衝突処理の解決といったものは、意外とインターネット上に参考情報が少なく、試行錯誤の連続でした。三角形関連のプリミティブな衝突処理の実装から始まり、BVH
                   の構築、衝突時の押し戻し処理など地道に実装を行いました。特に苦労したのは、地面上をスムーズに移動する処理です。ここでは、大学の講義で学んだガウス・ニュートン法が思いがけず役に立ちました。
                   <br></br>
@@ -30,7 +38,7 @@ export const MainProjects = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <a
-                    href="https://github.com/sashi0034/Sukuu"
+                    href="https://github.com/sashi0034/F0V2"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
@@ -39,22 +47,26 @@ export const MainProjects = () => {
                     <span>GitHub</span>
                   </a>
                   <a
-                    href="https://store.steampowered.com/app/3147480/Mutable_50/"
+                    href="https://zenn.dev/sashi0034/articles/3f268022b4df9f"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-gray-800 hover:bg-gray-200 transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-800 hover:bg-blue-200 transition-colors"
                   >
-                    <FaSteam className="w-5 h-5" />
-                    <span>Steam</span>
-                  </a>
-                  <a
-                    href="https://siv3d.github.io/ja-jp/event/gamejam2023/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#171a21] rounded-full text-white hover:bg-[#2a3f5f] transition-colors"
-                  >
-                    <FaTrophy className="w-5 h-5" />
-                    <span>ゲームジャム</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 6v6l4 2m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span>レンダリング部分の記事</span>
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -62,13 +74,10 @@ export const MainProjects = () => {
                     C++
                   </span>
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                    Siv3D
+                    DirectX 12
                   </span>
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
                     HLSL
-                  </span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
-                    Pixelart
                   </span>
                 </div>
               </div>
