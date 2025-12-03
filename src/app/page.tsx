@@ -26,49 +26,16 @@ const basePath = "";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-white to-primary-50">
-        <div className="container text-center">
-          <AnimatedSection>
-            <h1 className="heading-1 mb-6">
-              <span className="block text-primary-600">sashi</span>
-              <span className="block">portfolio</span>
-              <div className="flex justify-center mt-4">
-                <FaGamepad className="w-12 h-12 text-primary-600" />
-              </div>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              ゲーム開発をしています
-              {/* <br className="hidden sm:block" />
-              エンジニアのポートフォリオサイトへようこそ */}
-            </p>
-            <AnimatedSection
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              <a href="#about" className="btn">
-                詳しく見る
-                <ArrowDownIcon className="ml-2 h-5 w-5" />
-              </a>
-            </AnimatedSection>
-          </AnimatedSection>
-        </div>
-
-        {/* Scroll Indicator */}
-        <AnimatedSection
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-        >
-          <ArrowDownIcon className="h-6 w-6 text-primary-600" />
-        </AnimatedSection>
-      </section>
-
       {/* About Section */}
       <section id="about" className="section bg-white">
         <div className="container">
-          <h2 className="heading-2 text-center mb-12">About Me</h2>
+          <h2 className="heading-2 text-center mb-4">sashi portfolio</h2>
+          <div className="flex items-center justify-center mb-2">
+            <FaGamepad className="w-10 h-10 text-primary-600" />
+          </div>
+          <p className="text-sm text-gray-600 text-center mb-12">
+            ゲーム開発をしています
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <AnimatedSection
               initial={{ opacity: 0, x: -20 }}
@@ -86,7 +53,7 @@ export default function Home() {
                 <h3 className="heading-3 ml-4">sashi</h3>
               </div>
               <p className="text-gray-600 mb-6">
-                ゲームを遊ぶことはもちろんのこと、ゲーム開発に関する技術が大好きで、日々学習しながら開発を行っています。ピクセルアートも描いています。
+                ゲーム自体が好きなのはもちろんのこと、ゲーム開発関連の技術に強い興味関心があります。イラストやピクセルアートも描いています。
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
@@ -120,7 +87,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              
+
               {/* Portfolio Image */}
               <div className="mt-8 flex justify-center items-center gap-4">
                 <Image
