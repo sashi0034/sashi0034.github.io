@@ -195,7 +195,7 @@ export const MainProjects = () => {
                 </h3>
                 <p className="text-gray-600 mb-4">
                   AngelScript は Lua
-                  と同様にゲーム開発の現場で用いられる静的スクリプト言語です。
+                  と同様にゲーム開発の現場で用いられる静的型付けスクリプト言語です。
                   この OSS プロジェクトは AngelScript 汎用 LSP
                   クライアントであり、 多くのゲーム開発者に使用されています。
                   高性能な解析を行うために、コンパイラのフロントエンド部分を
