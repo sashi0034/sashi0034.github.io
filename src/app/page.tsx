@@ -15,7 +15,7 @@ import {
   FaSteam,
   FaTrophy,
 } from "react-icons/fa";
-import { CollapsibleSection } from "./components/CollapsibleSection";
+
 import { MainProjects } from "./components/MainProjects";
 import { SubProjects } from "./components/SubProjects";
 

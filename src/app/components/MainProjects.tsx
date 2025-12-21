@@ -1,6 +1,6 @@
-import { FaGithub, FaSteam, FaTrophy, FaBookOpen } from "react-icons/fa";
+import { FaGithub, FaSteam, FaTrophy } from "react-icons/fa";
 import { AnimatedSection } from "./AnimatedSection";
-import { CollapsibleSection } from "./CollapsibleSection";
+import { ReadMoreSection } from "./ReadMoreSection";
 
 export const MainProjects = () => {
   return (
@@ -17,13 +17,7 @@ export const MainProjects = () => {
                 <p className="text-gray-600 mb-4">
                   C++ と自作の DirectX 12 エンジンで開発した 99 人対戦の反重力レースゲームです。独自のディファードレンダリング＋レイマーチング表現、物理・AI・レベルエディタまで自作した技術志向の作品です。
                 </p>
-                <CollapsibleSection
-                  title={<span className="inline-flex items-center gap-2"><FaBookOpen className="w-4 h-4" />続きを読む</span>}
-                  defaultOpen={false}
-                  variant="inline"
-                  buttonClassName="mt-2 mb-2"
-                  contentClassName=""
-                >
+                <ReadMoreSection collapsedHeight="3rem">
                   <p className="text-gray-600 mb-4">
                     ローレベル API である DirectX 12 をバックエンドとした自作エンジン上を用いて C++ で開発したゲームです。グラフィック、物理、ゲーム AI といったインゲーム要素、他にもレベルエディタなども含めて自作しました。
                     <br></br>
@@ -37,7 +31,7 @@ export const MainProjects = () => {
                     <br></br>
                     対戦相手となるゲーム AI に関しては、スクエア・エニックスの三宅陽一郎さんの著書などで紹介されている「MCS-AI 動的連携モデル」を参考にしました。
                   </p>
-                </CollapsibleSection>
+                </ReadMoreSection>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <a
                     href="https://github.com/sashi0034/F0V2"
@@ -112,13 +106,7 @@ export const MainProjects = () => {
                 <p className="text-gray-600 mb-4">
                   C++ / Siv3D で開発した 2D アクション。Siv3D バンダイナムコスタジオ杯 2023 で最優秀賞を受賞し、発展版を Steam で配信。コルーチン活用や HLSL エフェクトに挑戦した作品です。
                 </p>
-                <CollapsibleSection
-                  title={<span className="inline-flex items-center gap-2"><FaBookOpen className="w-4 h-4" />続きを読む</span>}
-                  defaultOpen={false}
-                  variant="inline"
-                  buttonClassName="mt-2 mb-2"
-                  contentClassName=""
-                >
+                <ReadMoreSection collapsedHeight="3rem">
                   <p className="text-gray-600 mb-4">
                     C++ / Siv3D で開発した 2D アクションゲームです。グラフィックやプログラムを自作しています。このゲームは <span className="font-bold">Siv3D バンダイナムコスタジオ杯 2023 で作成し、最優秀賞</span> を受賞しました。 その後、発展させたバージョンを Steam にリリースしています。アイテムを駆使しながら自動生成されるダンジョンの第 50 層を目指すゲームです。
                     <br></br>
@@ -126,7 +114,7 @@ export const MainProjects = () => {
                     <br></br>
                     開発では boost::coroutine2 を試験的に導入し、コルーチンベースのアニメーションやイベント制御を取り入れてみました。C++ 20 で標準化されたコルーチンはスタックレスですが、それとは対照的に boost::coroutine2 はスタックフルのコルーチンであり、使い勝手やデバッグのしやすさ、また移植性の面で優れていると感じました。現在のプロジェクトでも活用しています。
                   </p>
-                </CollapsibleSection>
+                </ReadMoreSection>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <a
                     href="https://github.com/sashi0034/Sukuu"
@@ -196,13 +184,7 @@ export const MainProjects = () => {
                 <p className="text-gray-600 mb-4">
                   AngelScript 向けの汎用 LSP クライアントを TypeScript で自作。定義ジャンプや参照、補完、型チェックなど IDE 機能を提供し、ezEngine でも公式サポートされるなど実績のある OSS です。
                 </p>
-                <CollapsibleSection
-                  title={<span className="inline-flex items-center gap-2"><FaBookOpen className="w-4 h-4" />続きを読む</span>}
-                  defaultOpen={false}
-                  variant="inline"
-                  buttonClassName="mt-2 mb-2"
-                  contentClassName=""
-                >
+                <ReadMoreSection collapsedHeight="3rem">
                   <p className="text-gray-600 mb-4">
                     AngelScript は Lua と同様にゲーム開発の現場で用いられる静的型付けスクリプト言語です。この OSS プロジェクトは AngelScript 汎用 LSP クライアントであり、多くのゲーム開発者に使用されています。高性能な解析を行うために、コンパイラのフロントエンド部分を TypeScript で一から実装しています。VSCode などのクライアントで動作し、コーディングに欠かせない多くの機能が利用できます。例えば、シンボル定義へのジャンプや参照検索、コード補完に加えて、型チェックや関数呼び出し時の引数チェックなども行えます。
                     <br></br>
@@ -210,7 +192,7 @@ export const MainProjects = () => {
                     <br></br>
                     このソフトウェアは、実際のゲーム会社でも使用されている他、OSS で開発されている人気ゲームエンジン <b><a href="https://ezengine.net/pages/docs/custom-code/angelscript/as-components.html" target="_blank" rel="noopener noreferrer">ezEngine で公式サポートされている</a></b> といった実績があります。更に詳しい詳細は文末のリンクの開発記事で紹介しています。
                   </p>
-                </CollapsibleSection>
+                </ReadMoreSection>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <div className="flex items-center gap-2">
                     <a
@@ -315,13 +297,7 @@ export const MainProjects = () => {
                 <p className="text-gray-600 mb-4">
                   「世界最速メトロイドヴァニア」を目指す 2D 探索型アクション。シンプル操作で疾走感を演出し、独自のレベルエディタなどミドルウェアも自作して開発中のプロジェクトです。
                 </p>
-                <CollapsibleSection
-                  title={<span className="inline-flex items-center gap-2"><FaBookOpen className="w-4 h-4" />続きを読む</span>}
-                  defaultOpen={false}
-                  variant="inline"
-                  buttonClassName="mt-2 mb-2"
-                  contentClassName=""
-                >
+                <ReadMoreSection collapsedHeight="3rem">
                   <p className="text-gray-600 mb-4">
                     かなり気合を入れて鋭意開発している 2D 探索型アクションゲームです。{/* 2026 年内に Steam で発売することを目指しています。 */}「世界最速メトロイドヴァニア」をコンセプトに、爽快でスピーディーなアクションが楽しめます。プレイ動画は一見難しそうに見えるかも知れませんが、基本的にプレイに必要なボタンは十字ボタンと A, B ボタンだけで誰でも簡単に遊ぶことができる工夫をしています。
                     <br></br>
@@ -329,7 +305,7 @@ export const MainProjects = () => {
                     <br></br>
                     未だ開発途中ですが、独自に構築したレベルエディタをはじめとするミドルウェアを整備し、生産性を高めつつ小規模な体制でも最大限の成果を挙げられるシステムを構築しています。
                   </p>
-                </CollapsibleSection>
+                </ReadMoreSection>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <a
                     href="https://store.steampowered.com/app/3328960/Monad_Tachyon/"
@@ -417,13 +393,7 @@ export const MainProjects = () => {
                 <p className="text-gray-600 mb-4">
                   境界要素法 (BEM) を高速化する数値解析フレームワークを研究開発。CUDA による BiCGStab の高速化と CPU 側の OpenMP 前処理を組み合わせ、Tensor コア活用や可視化ツールの実装まで取り組んでいます。
                 </p>
-                <CollapsibleSection
-                  title={<span className="inline-flex items-center gap-2"><FaBookOpen className="w-4 h-4" />続きを読む</span>}
-                  defaultOpen={false}
-                  variant="inline"
-                  buttonClassName="mt-2 mb-2"
-                  contentClassName=""
-                >
+                <ReadMoreSection collapsedHeight="3rem">
                   <p className="text-gray-600 mb-4">
                     大学院では、境界要素法 (BEM) による大規模数値解析プログラムの高性能化を研究しています。 BEM は解析領域の境界のみを離散化することで高精度な解を効率的に得られる手法ですが、密行列計算の膨大な計算量が課題です。 本研究では、<span className="font-bold">GPU (CUDA) による高速な反復解法 (BiCGStab 法)</span> と、CPU 側の前処理の OpenMP 並列化を組み合わせ、スパコン上で効率的に動作する解析フレームワークを開発しています。ユーザーは物理モデルに応じた境界積分関数を記述するだけで、汎用的かつ高性能な BEM 解析が可能です。
                     <br></br>
@@ -433,7 +403,7 @@ export const MainProjects = () => {
                     <br></br>
                     なお、研究で用いる可視化ツールの開発にも DirectX 12 の自作エンジンを活用しています。
                   </p>
-                </CollapsibleSection>
+                </ReadMoreSection>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
                     CUDA
