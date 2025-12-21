@@ -8,26 +8,35 @@ type CollapsibleSectionProps = {
   title: React.ReactNode
   children: React.ReactNode
   defaultOpen?: boolean
+  variant?: 'card' | 'inline'
+  contentClassName?: string
+  buttonClassName?: string
 }
 
-export function CollapsibleSection({ title, children, defaultOpen = false }: CollapsibleSectionProps) {
+export function CollapsibleSection({ title, children, defaultOpen = false, variant = 'card', contentClassName, buttonClassName }: CollapsibleSectionProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen)
+  const isCard = variant !== 'inline'
 
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className={isCard ? "bg-white rounded-lg shadow-lg overflow-hidden" : ""}>
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+        className={`${
+          isCard
+            ? "w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+            : "inline-flex items-center gap-1 text-primary-600 hover:text-primary-700"
+        } ${buttonClassName ?? ''}`}
       >
-        <div className="flex-1">
-          {typeof title === 'string' ? (
+        <div className={isCard ? "flex-1" : ""}>
+          {isCard && typeof title === 'string' ? (
             <h3 className="text-2xl font-bold text-primary-800">{title}</h3>
           ) : (
             title
           )}
         </div>
         <ChevronDownIcon
-          className={`w-6 h-6 text-primary-600 transition-transform duration-200 ${
+          className={`${isCard ? 'w-6 h-6' : 'w-4 h-4'} text-primary-600 transition-transform duration-200 ${
             isOpen ? 'transform rotate-180' : ''
           }`}
         />
@@ -41,10 +50,10 @@ export function CollapsibleSection({ title, children, defaultOpen = false }: Col
             transition={{ duration: 0.2 }}
             className="overflow-hidden"
           >
-            <div className="px-6 pb-6">{children}</div>
+            <div className={`${isCard ? 'px-6 pb-6' : ''} ${contentClassName ?? ''}`}>{children}</div>
           </motion.div>
         )}
       </AnimatePresence>
     </div>
   )
-} 
+}
