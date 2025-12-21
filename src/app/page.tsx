@@ -170,8 +170,8 @@ export default function Home() {
               <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
                 <FaGamepad className="w-4 h-4 text-primary-600" />
                 <span>Pixelart</span>
-                <span className="text-xs text-gray-600 mt-1">
-                  SHIBUYA PIXEL ART 2024 受賞
+                <span className="text-xs text-gray-600 mt-1 font-bold">
+                  SHIBUYA PIXEL ART 2024: Limited Pixel Art 16×16 受賞
                 </span>
               </div>
               <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
@@ -238,7 +238,7 @@ export default function Home() {
                 <FaMicrosoft className="w-5 h-5 text-primary-600" />
                 <span>C#</span>
                 <span className="text-xs text-gray-600 mt-1">
-                  Unity 外の .NET も
+                  Unity, WPF
                 </span>
               </div>
               <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
