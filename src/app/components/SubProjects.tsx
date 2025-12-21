@@ -161,7 +161,7 @@ export const SubProjects = () => {
           title={
             <div>
               <div className="text-2xl font-bold text-primary-800">
-                純粋関数型プログラミング言語で開発したゲーム
+                純粋関数型プログラミング言語でゲーム開発
               </div>
               <div className="text-sm text-gray-600 mt-1">
                 関数型プログラミング言語 Haskell と SDL2 で作ったミニゲーム
