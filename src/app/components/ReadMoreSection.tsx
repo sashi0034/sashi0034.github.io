@@ -25,7 +25,10 @@ export function ReadMoreSection({
         initial={false}
         animate={{ height: isExpanded ? 'auto' : collapsedHeight }}
         transition={{ duration: 0.3 }}
-        className="overflow-hidden relative"
+        className={`overflow-hidden relative transition-colors duration-200 ${
+          !isExpanded ? 'cursor-pointer hover:bg-gray-50/50 rounded-lg' : ''
+        }`}
+        onClick={!isExpanded ? () => setIsExpanded(true) : undefined}
       >
         <div className={!isExpanded ? "" : ""}>
             {children}
