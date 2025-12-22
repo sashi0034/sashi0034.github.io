@@ -88,7 +88,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Portfolio Image */}
+              {/* Portfolio Image (Pixelart) */}
               <div className="mt-8 flex justify-center items-center gap-4">
                 <Image
                   src={`${basePath}/images/screenshot/sp_96x96-export.png`}
@@ -107,6 +107,17 @@ export default function Home() {
                   priority
                 />
               </div>
+              <p className="text-center text-sm text-gray-600 mt-4">
+                <a
+                  href="https://pixel-art.jp/spa2024/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-600 hover:text-primary-700"
+                >
+                  SHIBUYA PIXEL ART 2024
+                </a>{" "}
+                にて 「Limited Pixel Art 16×16」 を受賞しました。
+              </p>
             </AnimatedSection>
             <AnimatedSection
               initial={{ opacity: 0, x: 20 }}
@@ -170,9 +181,7 @@ export default function Home() {
               <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
                 <FaGamepad className="w-4 h-4 text-primary-600" />
                 <span>Pixelart</span>
-                <span className="text-xs text-gray-600 mt-1 font-bold">
-                  SHIBUYA PIXEL ART 2024: Limited Pixel Art 16×16 受賞
-                </span>
+                <span className="text-xs text-gray-600 mt-1">SHIBUYA PIXEL ART 2024 受賞</span>
               </div>
               <div className="bg-primary-50 rounded-full px-4 py-2 border border-primary-200 hover:border-primary-400 transition-colors flex items-center gap-2">
                 <FaGamepad className="w-4 h-4 text-primary-600" />
