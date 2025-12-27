@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import { AnimatedSection } from "./components/AnimatedSection";
 import Image from "next/image";
@@ -24,6 +25,8 @@ const isProd = process.env.NODE_ENV === "production";
 const basePath = "";
 
 export default function Home() {
+  const [isImgError, setIsImgError] = useState(false);
+
   return (
     <main className="min-h-screen">
       {/* About Section */}
@@ -122,13 +125,23 @@ export default function Home() {
             <AnimatedSection
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="bg-primary-100 rounded-lg p-8"
+              className="bg-primary-100 rounded-lg p-8 relative overflow-hidden"
             >
               <img
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sashi0034&layout=compact&langs_count=20"
+                src={isImgError 
+                  ? `${basePath}/images/avatar/top-languages-fallback.svg` 
+                  : "https://github-readme-stats.vercel.app/api/top-langs/?username=sashi0034&layout=compact&langs_count=20"
+                }
                 alt="Top Languages"
                 className="rounded-lg shadow-lg w-full"
+                onError={() => setIsImgError(true)}
               />
+              {isImgError && (
+                <div className="absolute top-4 right-4 bg-amber-100 border border-amber-200 text-amber-700 text-[10px] sm:text-xs font-medium px-2 py-1 rounded-full shadow-sm flex items-center gap-1 backdrop-blur-sm">
+                  <span className="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse"></span>
+                  データの取得に失敗したため、最新ではない可能性があります。
+                </div>
+              )}
             </AnimatedSection>
           </div>
 
