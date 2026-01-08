@@ -130,7 +130,7 @@ export default function Home() {
               <img
                 src={isImgError 
                   ? `${basePath}/images/avatar/top-languages-fallback.svg` 
-                  : "https://github-readme-stats.vercel.app/api/top-langs/?username=sashi0034&layout=compact&langs_count=20"
+                  : "https://github-readme-stats-fast.vercel.app/api/top-langs/?username=sashi0034&layout=compact&langs_count=20"
                 }
                 alt="Top Languages"
                 className="rounded-lg shadow-lg w-full"
