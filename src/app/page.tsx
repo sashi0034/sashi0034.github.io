@@ -112,7 +112,7 @@ export default function Home() {
               </div>
               <p className="text-center text-sm text-gray-600 mt-4">
                 <a
-                  href="https://pixel-art.jp/spa2024/"
+                  href="https://pixel-art.jp/event-artist"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-600 hover:text-primary-700"
