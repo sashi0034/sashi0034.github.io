@@ -124,7 +124,7 @@ export const MainProjects = () => {
                     <FaGithub className="w-5 h-5" />
                     <span>GitHub</span>
                   </a>
-                  <a
+                  {/* <a
                     href="https://store.steampowered.com/app/3147480/Mutable_50/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -132,7 +132,7 @@ export const MainProjects = () => {
                   >
                     <FaSteam className="w-5 h-5" />
                     <span>Steam</span>
-                  </a>
+                  </a> */}
                   <a
                     href="https://siv3d.github.io/ja-jp/event/gamejam2023/"
                     target="_blank"
@@ -303,7 +303,7 @@ export const MainProjects = () => {
                     未だ開発途中ですが、独自に構築したレベルエディタをはじめとするミドルウェアを整備し、生産性を高めつつ小規模な体制でも最大限の成果を挙げられるシステムを構築しています。
                   </p>
                 </ReadMoreSection>
-                <div className="flex flex-wrap gap-2 mb-4">
+                {/* <div className="flex flex-wrap gap-2 mb-4">
                   <a
                     href="https://store.steampowered.com/app/3328960/Monad_Tachyon/"
                     target="_blank"
@@ -335,7 +335,7 @@ export const MainProjects = () => {
                     </svg>
                     <span>紹介記事</span>
                   </a>
-                </div>
+                </div> */}
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
                     C++
